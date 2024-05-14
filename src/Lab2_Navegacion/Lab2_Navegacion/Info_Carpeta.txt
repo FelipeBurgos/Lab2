@@ -1,0 +1,5 @@
+En este paquete van todos los scripts relacionados al control PI del Robot:
+	- Dead reckoning
+	- Controladores
+	- Grafo
+	- Pose_loader

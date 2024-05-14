@@ -1,0 +1,1 @@
+/home/fbr/Lab2/src/very_simple_robot_simulator/scripts/world_state_gui.py

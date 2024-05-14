@@ -1,0 +1,25 @@
+[2.699s] Invoking command in '/home/fbr/Lab2/build/Lab2_Navegacion': PYTHONPATH=/home/fbr/Lab2/build/Lab2_Navegacion/prefix_override:/home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/fbr/Lab2/build/Lab2_Navegacion/build --no-deps symlink_data
+[3.736s] running develop
+[3.739s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.739s]   warnings.warn(
+[4.404s] running egg_info
+[4.405s] creating Lab2_Navegacion.egg-info
+[4.406s] writing Lab2_Navegacion.egg-info/PKG-INFO
+[4.408s] writing dependency_links to Lab2_Navegacion.egg-info/dependency_links.txt
+[4.409s] writing entry points to Lab2_Navegacion.egg-info/entry_points.txt
+[4.410s] writing requirements to Lab2_Navegacion.egg-info/requires.txt
+[4.410s] writing top-level names to Lab2_Navegacion.egg-info/top_level.txt
+[4.410s] writing manifest file 'Lab2_Navegacion.egg-info/SOURCES.txt'
+[4.416s] reading manifest file 'Lab2_Navegacion.egg-info/SOURCES.txt'
+[4.417s] writing manifest file 'Lab2_Navegacion.egg-info/SOURCES.txt'
+[4.421s] running build_ext
+[4.422s] Creating /home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages/Lab2-Navegacion.egg-link (link to .)
+[4.427s] 
+[4.429s] Installed /home/fbr/Lab2/build/Lab2_Navegacion
+[4.429s] running symlink_data
+[4.430s] creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index
+[4.431s] creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index
+[4.431s] creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index/packages
+[4.432s] symbolically linking /home/fbr/Lab2/build/Lab2_Navegacion/resource/Lab2_Navegacion -> /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index/packages
+[4.432s] symbolically linking /home/fbr/Lab2/build/Lab2_Navegacion/package.xml -> /home/fbr/Lab2/install/Lab2_Navegacion/share/Lab2_Navegacion
+[4.536s] Invoked command in '/home/fbr/Lab2/build/Lab2_Navegacion' returned '0': PYTHONPATH=/home/fbr/Lab2/build/Lab2_Navegacion/prefix_override:/home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/fbr/Lab2/build/Lab2_Navegacion/build --no-deps symlink_data
