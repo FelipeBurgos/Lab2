@@ -3,3 +3,8 @@ En este paquete van todos los scripts relacionados al control PI del Robot:
 	- Controladores
 	- Grafo
 	- Pose_loader
+
+mover_robot_a_destino -> descompone las poses que vienen en formato (x,y,theta) a desplazamientos en metros [(x,0), (0, theta), (y,0)]
+aplicar_velocidad -> la lista obtenida anteriormente sera la señal de referencia del controlador.
+
+Es el controlador quien publica ahora la velocidad que el robot debe tomar!!
