@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/PKG-INFO
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/SOURCES.txt
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/dependency_links.txt
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/entry_points.txt
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/requires.txt
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/top_level.txt
+../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/zip-safe
+Lab2_Navegacion/__init__.py
+resource/Lab2_Navegacion
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

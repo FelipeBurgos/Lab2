@@ -1,0 +1,1490 @@
+[0.000000] (-) TimerEvent: {}
+[0.002766] (Lab2_Navegacion) JobQueued: {'identifier': 'Lab2_Navegacion', 'dependencies': OrderedDict()}
+[0.003025] (cmd_vel_mux) JobQueued: {'identifier': 'cmd_vel_mux', 'dependencies': OrderedDict()}
+[0.003197] (very_simple_robot_simulator) JobQueued: {'identifier': 'very_simple_robot_simulator', 'dependencies': OrderedDict()}
+[0.003330] (Lab2_Navegacion) JobStarted: {'identifier': 'Lab2_Navegacion'}
+[0.028982] (cmd_vel_mux) JobStarted: {'identifier': 'cmd_vel_mux'}
+[0.043487] (very_simple_robot_simulator) JobStarted: {'identifier': 'very_simple_robot_simulator'}
+[0.098129] (-) TimerEvent: {}
+[0.198769] (-) TimerEvent: {}
+[0.299494] (-) TimerEvent: {}
+[0.400165] (-) TimerEvent: {}
+[0.500924] (-) TimerEvent: {}
+[0.600264] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'cmake'}
+[0.602949] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '/home/fbr/Lab2/src/cmd_vel_mux', '-DCMAKE_INSTALL_PREFIX=/home/fbr/Lab2/install/cmd_vel_mux'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.612034] (-) TimerEvent: {}
+[0.615097] (very_simple_robot_simulator) JobProgress: {'identifier': 'very_simple_robot_simulator', 'progress': 'cmake'}
+[0.615329] (very_simple_robot_simulator) Command: {'cmd': ['/usr/bin/cmake', '/home/fbr/Lab2/src/very_simple_robot_simulator', '-DCMAKE_INSTALL_PREFIX=/home/fbr/Lab2/install/very_simple_robot_simulator'], 'cwd': '/home/fbr/Lab2/build/very_simple_robot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/very_simple_robot_simulator'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.712206] (-) TimerEvent: {}
+[0.812896] (-) TimerEvent: {}
+[0.913755] (-) TimerEvent: {}
+[1.014492] (-) TimerEvent: {}
+[1.115119] (-) TimerEvent: {}
+[1.215805] (-) TimerEvent: {}
+[1.266222] (cmd_vel_mux) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.270500] (very_simple_robot_simulator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.315965] (-) TimerEvent: {}
+[1.416670] (-) TimerEvent: {}
+[1.517658] (-) TimerEvent: {}
+[1.618515] (-) TimerEvent: {}
+[1.719412] (-) TimerEvent: {}
+[1.820240] (-) TimerEvent: {}
+[1.887605] (Lab2_Navegacion) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/Lab2_Navegacion', 'build', '--build-base', '/home/fbr/Lab2/build/Lab2_Navegacion/build', 'install', '--record', '/home/fbr/Lab2/build/Lab2_Navegacion/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fbr/Lab2/src/Lab2_Navegacion', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fbr', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/fbr', 'OLDPWD': '/home/fbr/Lab2/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'fbr', 'NAME': 'LAPTOP-KDA5M4HC', 'WSL_INTEROP': '/run/WSL/338_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/fbr/Lab2/build/Lab2_Navegacion', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fbr/Lab2/build/Lab2_Navegacion/prefix_override:/home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages:/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux', 'WSLENV': ''}, 'shell': False}
+[1.920471] (-) TimerEvent: {}
+[2.021286] (-) TimerEvent: {}
+[2.122191] (-) TimerEvent: {}
+[2.222835] (-) TimerEvent: {}
+[2.323654] (-) TimerEvent: {}
+[2.420185] (very_simple_robot_simulator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.423792] (-) TimerEvent: {}
+[2.424649] (cmd_vel_mux) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.524068] (-) TimerEvent: {}
+[2.624800] (-) TimerEvent: {}
+[2.725505] (-) TimerEvent: {}
+[2.826282] (-) TimerEvent: {}
+[2.835700] (Lab2_Navegacion) StdoutLine: {'line': b'running egg_info\n'}
+[2.838125] (Lab2_Navegacion) StdoutLine: {'line': b'creating ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info\n'}
+[2.838861] (Lab2_Navegacion) StdoutLine: {'line': b'writing ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/PKG-INFO\n'}
+[2.839560] (Lab2_Navegacion) StdoutLine: {'line': b'writing dependency_links to ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/dependency_links.txt\n'}
+[2.840237] (Lab2_Navegacion) StdoutLine: {'line': b'writing entry points to ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/entry_points.txt\n'}
+[2.841226] (Lab2_Navegacion) StdoutLine: {'line': b'writing requirements to ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/requires.txt\n'}
+[2.841813] (Lab2_Navegacion) StdoutLine: {'line': b'writing top-level names to ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/top_level.txt\n'}
+[2.842342] (Lab2_Navegacion) StdoutLine: {'line': b"writing manifest file '../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/SOURCES.txt'\n"}
+[2.850555] (Lab2_Navegacion) StdoutLine: {'line': b"reading manifest file '../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/SOURCES.txt'\n"}
+[2.856120] (Lab2_Navegacion) StdoutLine: {'line': b"writing manifest file '../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info/SOURCES.txt'\n"}
+[2.856687] (Lab2_Navegacion) StdoutLine: {'line': b'running build\n'}
+[2.857066] (Lab2_Navegacion) StdoutLine: {'line': b'running build_py\n'}
+[2.857457] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/build/Lab2_Navegacion/build\n'}
+[2.857634] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/build/Lab2_Navegacion/build/lib\n'}
+[2.857888] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/build/Lab2_Navegacion/build/lib/Lab2_Navegacion\n'}
+[2.858041] (Lab2_Navegacion) StdoutLine: {'line': b'copying Lab2_Navegacion/__init__.py -> /home/fbr/Lab2/build/Lab2_Navegacion/build/lib/Lab2_Navegacion\n'}
+[2.858430] (Lab2_Navegacion) StdoutLine: {'line': b'running install\n'}
+[2.860142] (Lab2_Navegacion) StdoutLine: {'line': b'running install_lib\n'}
+[2.863181] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages/Lab2_Navegacion\n'}
+[2.864020] (Lab2_Navegacion) StdoutLine: {'line': b'copying /home/fbr/Lab2/build/Lab2_Navegacion/build/lib/Lab2_Navegacion/__init__.py -> /home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages/Lab2_Navegacion\n'}
+[2.867107] (Lab2_Navegacion) StdoutLine: {'line': b'byte-compiling /home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages/Lab2_Navegacion/__init__.py to __init__.cpython-310.pyc\n'}
+[2.868223] (Lab2_Navegacion) StdoutLine: {'line': b'running install_data\n'}
+[2.868795] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index\n'}
+[2.869744] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index\n'}
+[2.871983] (Lab2_Navegacion) StdoutLine: {'line': b'creating /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index/packages\n'}
+[2.872646] (Lab2_Navegacion) StdoutLine: {'line': b'copying resource/Lab2_Navegacion -> /home/fbr/Lab2/install/Lab2_Navegacion/share/ament_index/resource_index/packages\n'}
+[2.873270] (Lab2_Navegacion) StdoutLine: {'line': b'copying package.xml -> /home/fbr/Lab2/install/Lab2_Navegacion/share/Lab2_Navegacion\n'}
+[2.873868] (Lab2_Navegacion) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.883956] (Lab2_Navegacion) StdoutLine: {'line': b'Copying ../../build/Lab2_Navegacion/Lab2_Navegacion.egg-info to /home/fbr/Lab2/install/Lab2_Navegacion/lib/python3.10/site-packages/Lab2_Navegacion-0.0.0-py3.10.egg-info\n'}
+[2.889356] (Lab2_Navegacion) StdoutLine: {'line': b'running install_scripts\n'}
+[2.926520] (-) TimerEvent: {}
+[2.990411] (Lab2_Navegacion) StdoutLine: {'line': b"writing list of installed files to '/home/fbr/Lab2/build/Lab2_Navegacion/install.log'\n"}
+[3.026768] (-) TimerEvent: {}
+[3.121647] (Lab2_Navegacion) CommandEnded: {'returncode': 0}
+[3.127100] (-) TimerEvent: {}
+[3.161228] (Lab2_Navegacion) JobEnded: {'identifier': 'Lab2_Navegacion', 'rc': 0}
+[3.227371] (-) TimerEvent: {}
+[3.269117] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.304917] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.327576] (-) TimerEvent: {}
+[3.428530] (-) TimerEvent: {}
+[3.529551] (-) TimerEvent: {}
+[3.584338] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.588528] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.618658] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.619608] (cmd_vel_mux) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.620846] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.621427] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.622715] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.623351] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.629707] (-) TimerEvent: {}
+[3.635073] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.635676] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.730024] (-) TimerEvent: {}
+[3.830753] (-) TimerEvent: {}
+[3.931609] (-) TimerEvent: {}
+[3.947036] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.951515] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.972984] (cmd_vel_mux) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.973710] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.974803] (cmd_vel_mux) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.975315] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.975928] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.978056] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.987471] (cmd_vel_mux) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.995703] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.031828] (-) TimerEvent: {}
+[4.132774] (-) TimerEvent: {}
+[4.233395] (-) TimerEvent: {}
+[4.334227] (-) TimerEvent: {}
+[4.407077] (cmd_vel_mux) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.421035] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.434421] (-) TimerEvent: {}
+[4.535174] (-) TimerEvent: {}
+[4.635830] (-) TimerEvent: {}
+[4.649846] (cmd_vel_mux) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.655497] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.736083] (-) TimerEvent: {}
+[4.836998] (-) TimerEvent: {}
+[4.938555] (-) TimerEvent: {}
+[4.939698] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.943873] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.957686] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.959639] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.988213] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.990898] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.033085] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.033692] (cmd_vel_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.038716] (-) TimerEvent: {}
+[5.097180] (cmd_vel_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.098001] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.138934] (-) TimerEvent: {}
+[5.239748] (-) TimerEvent: {}
+[5.301775] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.310312] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.339920] (-) TimerEvent: {}
+[5.414320] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/share/rcl_interfaces/cmake)\n'}
+[5.440143] (-) TimerEvent: {}
+[5.510653] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.540300] (-) TimerEvent: {}
+[5.596056] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.604044] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.640580] (-) TimerEvent: {}
+[5.741371] (-) TimerEvent: {}
+[5.842269] (-) TimerEvent: {}
+[5.943252] (-) TimerEvent: {}
+[6.044354] (-) TimerEvent: {}
+[6.145368] (-) TimerEvent: {}
+[6.246592] (-) TimerEvent: {}
+[6.347522] (-) TimerEvent: {}
+[6.448208] (-) TimerEvent: {}
+[6.549058] (-) TimerEvent: {}
+[6.649951] (-) TimerEvent: {}
+[6.750882] (-) TimerEvent: {}
+[6.851657] (-) TimerEvent: {}
+[6.952381] (-) TimerEvent: {}
+[7.053231] (-) TimerEvent: {}
+[7.153990] (-) TimerEvent: {}
+[7.254645] (-) TimerEvent: {}
+[7.355330] (-) TimerEvent: {}
+[7.456095] (-) TimerEvent: {}
+[7.557016] (-) TimerEvent: {}
+[7.657760] (-) TimerEvent: {}
+[7.758468] (-) TimerEvent: {}
+[7.859162] (-) TimerEvent: {}
+[7.959977] (-) TimerEvent: {}
+[8.022637] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.060282] (-) TimerEvent: {}
+[8.161078] (-) TimerEvent: {}
+[8.261958] (-) TimerEvent: {}
+[8.362756] (-) TimerEvent: {}
+[8.432626] (cmd_vel_mux) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.463018] (-) TimerEvent: {}
+[8.563884] (-) TimerEvent: {}
+[8.664703] (-) TimerEvent: {}
+[8.765617] (-) TimerEvent: {}
+[8.866312] (-) TimerEvent: {}
+[8.967112] (-) TimerEvent: {}
+[9.067907] (-) TimerEvent: {}
+[9.168914] (-) TimerEvent: {}
+[9.269772] (-) TimerEvent: {}
+[9.370577] (-) TimerEvent: {}
+[9.471278] (-) TimerEvent: {}
+[9.572101] (-) TimerEvent: {}
+[9.672840] (-) TimerEvent: {}
+[9.773591] (-) TimerEvent: {}
+[9.874485] (-) TimerEvent: {}
+[9.975297] (-) TimerEvent: {}
+[10.076054] (-) TimerEvent: {}
+[10.176838] (-) TimerEvent: {}
+[10.277495] (-) TimerEvent: {}
+[10.378334] (-) TimerEvent: {}
+[10.479222] (-) TimerEvent: {}
+[10.579881] (-) TimerEvent: {}
+[10.680715] (-) TimerEvent: {}
+[10.781504] (-) TimerEvent: {}
+[10.882363] (-) TimerEvent: {}
+[10.983319] (-) TimerEvent: {}
+[11.084034] (-) TimerEvent: {}
+[11.147477] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.184266] (-) TimerEvent: {}
+[11.284943] (-) TimerEvent: {}
+[11.387368] (-) TimerEvent: {}
+[11.488068] (-) TimerEvent: {}
+[11.588998] (-) TimerEvent: {}
+[11.684115] (cmd_vel_mux) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.689219] (-) TimerEvent: {}
+[11.790053] (-) TimerEvent: {}
+[11.890814] (-) TimerEvent: {}
+[11.991795] (-) TimerEvent: {}
+[12.092640] (-) TimerEvent: {}
+[12.193398] (-) TimerEvent: {}
+[12.294152] (-) TimerEvent: {}
+[12.395128] (-) TimerEvent: {}
+[12.495992] (-) TimerEvent: {}
+[12.596935] (-) TimerEvent: {}
+[12.697893] (-) TimerEvent: {}
+[12.798914] (-) TimerEvent: {}
+[12.899785] (-) TimerEvent: {}
+[13.000672] (-) TimerEvent: {}
+[13.101407] (-) TimerEvent: {}
+[13.202121] (-) TimerEvent: {}
+[13.303089] (-) TimerEvent: {}
+[13.403798] (-) TimerEvent: {}
+[13.504701] (-) TimerEvent: {}
+[13.605734] (-) TimerEvent: {}
+[13.706724] (-) TimerEvent: {}
+[13.807695] (-) TimerEvent: {}
+[13.910285] (-) TimerEvent: {}
+[14.020321] (-) TimerEvent: {}
+[14.121299] (-) TimerEvent: {}
+[14.222835] (-) TimerEvent: {}
+[14.324980] (-) TimerEvent: {}
+[14.427552] (-) TimerEvent: {}
+[14.528789] (-) TimerEvent: {}
+[14.630184] (-) TimerEvent: {}
+[14.731016] (-) TimerEvent: {}
+[14.831892] (-) TimerEvent: {}
+[14.932735] (-) TimerEvent: {}
+[15.033589] (-) TimerEvent: {}
+[15.134383] (-) TimerEvent: {}
+[15.235461] (-) TimerEvent: {}
+[15.336727] (-) TimerEvent: {}
+[15.437536] (-) TimerEvent: {}
+[15.538429] (-) TimerEvent: {}
+[15.639246] (-) TimerEvent: {}
+[15.740140] (-) TimerEvent: {}
+[15.841053] (-) TimerEvent: {}
+[15.942972] (-) TimerEvent: {}
+[16.043840] (-) TimerEvent: {}
+[16.144609] (-) TimerEvent: {}
+[16.245354] (-) TimerEvent: {}
+[16.346200] (-) TimerEvent: {}
+[16.447101] (-) TimerEvent: {}
+[16.548138] (-) TimerEvent: {}
+[16.649018] (-) TimerEvent: {}
+[16.750033] (-) TimerEvent: {}
+[16.851784] (-) TimerEvent: {}
+[16.952914] (-) TimerEvent: {}
+[17.054108] (-) TimerEvent: {}
+[17.155082] (-) TimerEvent: {}
+[17.256021] (-) TimerEvent: {}
+[17.356930] (-) TimerEvent: {}
+[17.457885] (-) TimerEvent: {}
+[17.558764] (-) TimerEvent: {}
+[17.659697] (-) TimerEvent: {}
+[17.760483] (-) TimerEvent: {}
+[17.861322] (-) TimerEvent: {}
+[17.962134] (-) TimerEvent: {}
+[18.063013] (-) TimerEvent: {}
+[18.163763] (-) TimerEvent: {}
+[18.264657] (-) TimerEvent: {}
+[18.365765] (-) TimerEvent: {}
+[18.466425] (-) TimerEvent: {}
+[18.567223] (-) TimerEvent: {}
+[18.668136] (-) TimerEvent: {}
+[18.768879] (-) TimerEvent: {}
+[18.869651] (-) TimerEvent: {}
+[18.970444] (-) TimerEvent: {}
+[18.973490] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.010969] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[19.070695] (-) TimerEvent: {}
+[19.171531] (-) TimerEvent: {}
+[19.272396] (-) TimerEvent: {}
+[19.373243] (-) TimerEvent: {}
+[19.391773] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[19.392618] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[19.473464] (-) TimerEvent: {}
+[19.574697] (-) TimerEvent: {}
+[19.676034] (-) TimerEvent: {}
+[19.776881] (-) TimerEvent: {}
+[19.806537] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[19.809354] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[19.834810] (cmd_vel_mux) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.859308] (cmd_vel_mux) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[19.877052] (-) TimerEvent: {}
+[19.977695] (-) TimerEvent: {}
+[20.078435] (-) TimerEvent: {}
+[20.179523] (-) TimerEvent: {}
+[20.234497] (cmd_vel_mux) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[20.235255] (cmd_vel_mux) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[20.279742] (-) TimerEvent: {}
+[20.358646] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[20.364199] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[20.380008] (-) TimerEvent: {}
+[20.480853] (-) TimerEvent: {}
+[20.570738] (cmd_vel_mux) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[20.573995] (cmd_vel_mux) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[20.581063] (-) TimerEvent: {}
+[20.681700] (-) TimerEvent: {}
+[20.782481] (-) TimerEvent: {}
+[20.883376] (-) TimerEvent: {}
+[20.962419] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[20.983575] (-) TimerEvent: {}
+[21.086190] (-) TimerEvent: {}
+[21.187225] (-) TimerEvent: {}
+[21.288110] (-) TimerEvent: {}
+[21.292944] (cmd_vel_mux) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[21.388341] (-) TimerEvent: {}
+[21.489301] (-) TimerEvent: {}
+[21.528330] (cmd_vel_mux) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.5 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[21.533692] (cmd_vel_mux) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[21.589557] (-) TimerEvent: {}
+[21.690561] (-) TimerEvent: {}
+[21.791429] (-) TimerEvent: {}
+[21.892253] (-) TimerEvent: {}
+[21.903717] (cmd_vel_mux) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[21.992483] (-) TimerEvent: {}
+[22.093456] (-) TimerEvent: {}
+[22.194616] (-) TimerEvent: {}
+[22.295919] (-) TimerEvent: {}
+[22.397064] (-) TimerEvent: {}
+[22.497935] (-) TimerEvent: {}
+[22.598831] (-) TimerEvent: {}
+[22.699958] (-) TimerEvent: {}
+[22.800835] (-) TimerEvent: {}
+[22.832629] (cmd_vel_mux) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[22.834302] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[22.834884] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[22.835463] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[22.894607] (cmd_vel_mux) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[22.901117] (-) TimerEvent: {}
+[22.915009] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[22.916484] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fbr/Lab2/src/cmd_vel_mux/include\n'}
+[22.917075] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[22.932829] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[22.933545] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[22.933934] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[22.935245] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.938629] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[22.947340] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[22.948824] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[22.950927] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.955903] (cmd_vel_mux) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.001319] (-) TimerEvent: {}
+[23.015508] (cmd_vel_mux) StdoutLine: {'line': b'-- Generating done\n'}
+[23.021460] (cmd_vel_mux) StdoutLine: {'line': b'-- Build files have been written to: /home/fbr/Lab2/build/cmd_vel_mux\n'}
+[23.054565] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[23.059595] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'build'}
+[23.061063] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fbr/Lab2/build/cmd_vel_mux', '--', '-j4', '-l4'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[23.101548] (-) TimerEvent: {}
+[23.179365] (cmd_vel_mux) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/cmd_vel_mux.dir/src/cmd_vel_mux.cpp.o\x1b[0m\n'}
+[23.191511] (cmd_vel_mux) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cmd_vel_mux_node.dir/rclcpp_components/node_main_cmd_vel_mux_node.cpp.o\x1b[0m\n'}
+[23.201720] (-) TimerEvent: {}
+[23.302720] (-) TimerEvent: {}
+[23.403453] (-) TimerEvent: {}
+[23.504971] (-) TimerEvent: {}
+[23.605939] (-) TimerEvent: {}
+[23.706852] (-) TimerEvent: {}
+[23.807928] (-) TimerEvent: {}
+[23.908656] (-) TimerEvent: {}
+[24.009406] (-) TimerEvent: {}
+[24.110143] (-) TimerEvent: {}
+[24.211029] (-) TimerEvent: {}
+[24.311945] (-) TimerEvent: {}
+[24.412829] (-) TimerEvent: {}
+[24.513779] (-) TimerEvent: {}
+[24.614425] (-) TimerEvent: {}
+[24.715286] (-) TimerEvent: {}
+[24.816039] (-) TimerEvent: {}
+[24.901406] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[24.916291] (-) TimerEvent: {}
+[25.017026] (-) TimerEvent: {}
+[25.117719] (-) TimerEvent: {}
+[25.218593] (-) TimerEvent: {}
+[25.230569] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[25.265324] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[25.318819] (-) TimerEvent: {}
+[25.421726] (-) TimerEvent: {}
+[25.523358] (-) TimerEvent: {}
+[25.624225] (-) TimerEvent: {}
+[25.725211] (-) TimerEvent: {}
+[25.825948] (-) TimerEvent: {}
+[25.851985] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[25.869901] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[25.872355] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[25.926228] (-) TimerEvent: {}
+[26.026942] (-) TimerEvent: {}
+[26.127824] (-) TimerEvent: {}
+[26.228557] (-) TimerEvent: {}
+[26.329183] (-) TimerEvent: {}
+[26.429830] (-) TimerEvent: {}
+[26.540785] (-) TimerEvent: {}
+[26.646390] (-) TimerEvent: {}
+[26.747239] (-) TimerEvent: {}
+[26.848262] (-) TimerEvent: {}
+[26.948775] (-) TimerEvent: {}
+[27.049444] (-) TimerEvent: {}
+[27.150068] (-) TimerEvent: {}
+[27.250795] (-) TimerEvent: {}
+[27.351437] (-) TimerEvent: {}
+[27.439930] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[27.451650] (-) TimerEvent: {}
+[27.552696] (-) TimerEvent: {}
+[27.573750] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[27.652961] (-) TimerEvent: {}
+[27.753787] (-) TimerEvent: {}
+[27.854507] (-) TimerEvent: {}
+[27.955382] (-) TimerEvent: {}
+[28.040950] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[28.055601] (-) TimerEvent: {}
+[28.156350] (-) TimerEvent: {}
+[28.257076] (-) TimerEvent: {}
+[28.320551] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[28.323110] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator\n'}
+[28.323884] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[28.326843] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[28.331452] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[28.334560] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[28.342548] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[28.343190] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[28.345423] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[28.349656] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[28.357256] (-) TimerEvent: {}
+[28.426598] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[28.434927] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/fbr/Lab2/build/very_simple_robot_simulator\n'}
+[28.457508] (-) TimerEvent: {}
+[28.472564] (very_simple_robot_simulator) CommandEnded: {'returncode': 0}
+[28.473672] (very_simple_robot_simulator) JobProgress: {'identifier': 'very_simple_robot_simulator', 'progress': 'build'}
+[28.473780] (very_simple_robot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fbr/Lab2/build/very_simple_robot_simulator', '--', '-j4', '-l4'], 'cwd': '/home/fbr/Lab2/build/very_simple_robot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/very_simple_robot_simulator'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[28.557669] (-) TimerEvent: {}
+[28.646320] (very_simple_robot_simulator) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/kinect_simulator.dir/src/kinect_simulator.cpp.o\x1b[0m\n'}
+[28.657839] (-) TimerEvent: {}
+[28.661636] (very_simple_robot_simulator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/kinect_simulator.dir/src/kinect_simulator_node.cpp.o\x1b[0m\n'}
+[28.675607] (very_simple_robot_simulator) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_copy_very_simple_robot_simulator\n'}
+[28.697552] (very_simple_robot_simulator) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/kinect_simulator.dir/src/vsrs_utils.cpp.o\x1b[0m\n'}
+[28.758005] (-) TimerEvent: {}
+[28.858667] (-) TimerEvent: {}
+[28.959280] (-) TimerEvent: {}
+[29.059815] (-) TimerEvent: {}
+[29.160394] (-) TimerEvent: {}
+[29.260982] (-) TimerEvent: {}
+[29.361577] (-) TimerEvent: {}
+[29.462326] (-) TimerEvent: {}
+[29.562856] (-) TimerEvent: {}
+[29.663398] (-) TimerEvent: {}
+[29.764004] (-) TimerEvent: {}
+[29.864648] (-) TimerEvent: {}
+[29.965371] (-) TimerEvent: {}
+[30.066473] (-) TimerEvent: {}
+[30.167442] (-) TimerEvent: {}
+[30.268326] (-) TimerEvent: {}
+[30.370015] (-) TimerEvent: {}
+[30.476293] (-) TimerEvent: {}
+[30.577512] (-) TimerEvent: {}
+[30.632704] (very_simple_robot_simulator) StdoutLine: {'line': b'running egg_info\n'}
+[30.637221] (very_simple_robot_simulator) StdoutLine: {'line': b'creating very_simple_robot_simulator.egg-info\n'}
+[30.637851] (very_simple_robot_simulator) StdoutLine: {'line': b'writing very_simple_robot_simulator.egg-info/PKG-INFO\n'}
+[30.646058] (very_simple_robot_simulator) StdoutLine: {'line': b'writing dependency_links to very_simple_robot_simulator.egg-info/dependency_links.txt\n'}
+[30.646816] (very_simple_robot_simulator) StdoutLine: {'line': b'writing top-level names to very_simple_robot_simulator.egg-info/top_level.txt\n'}
+[30.647449] (very_simple_robot_simulator) StdoutLine: {'line': b"writing manifest file 'very_simple_robot_simulator.egg-info/SOURCES.txt'\n"}
+[30.661390] (very_simple_robot_simulator) StdoutLine: {'line': b"reading manifest file 'very_simple_robot_simulator.egg-info/SOURCES.txt'\n"}
+[30.663327] (very_simple_robot_simulator) StdoutLine: {'line': b"writing manifest file 'very_simple_robot_simulator.egg-info/SOURCES.txt'\n"}
+[30.677792] (-) TimerEvent: {}
+[30.778493] (-) TimerEvent: {}
+[30.879380] (-) TimerEvent: {}
+[30.938887] (very_simple_robot_simulator) StdoutLine: {'line': b'[ 75%] Built target ament_cmake_python_build_very_simple_robot_simulator_egg\n'}
+[30.979716] (-) TimerEvent: {}
+[31.080587] (-) TimerEvent: {}
+[31.181392] (-) TimerEvent: {}
+[31.282058] (-) TimerEvent: {}
+[31.295024] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:9\x1b[m\x1b[K:\n'}
+[31.295695] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[31.296285] (very_simple_robot_simulator) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[31.296758] (very_simple_robot_simulator) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[31.383305] (-) TimerEvent: {}
+[31.484096] (-) TimerEvent: {}
+[31.584843] (-) TimerEvent: {}
+[31.685617] (-) TimerEvent: {}
+[31.787123] (-) TimerEvent: {}
+[31.887879] (-) TimerEvent: {}
+[31.989289] (-) TimerEvent: {}
+[32.090132] (-) TimerEvent: {}
+[32.190813] (-) TimerEvent: {}
+[32.291339] (-) TimerEvent: {}
+[32.392238] (-) TimerEvent: {}
+[32.493311] (-) TimerEvent: {}
+[32.594035] (-) TimerEvent: {}
+[32.694699] (-) TimerEvent: {}
+[32.795554] (-) TimerEvent: {}
+[32.896283] (-) TimerEvent: {}
+[32.997251] (-) TimerEvent: {}
+[33.098565] (-) TimerEvent: {}
+[33.199347] (-) TimerEvent: {}
+[33.300262] (-) TimerEvent: {}
+[33.401092] (-) TimerEvent: {}
+[33.501776] (-) TimerEvent: {}
+[33.602491] (-) TimerEvent: {}
+[33.703496] (-) TimerEvent: {}
+[33.804201] (-) TimerEvent: {}
+[33.905060] (-) TimerEvent: {}
+[34.006254] (-) TimerEvent: {}
+[34.107003] (-) TimerEvent: {}
+[34.207944] (-) TimerEvent: {}
+[34.309222] (-) TimerEvent: {}
+[34.410227] (-) TimerEvent: {}
+[34.511966] (-) TimerEvent: {}
+[34.622879] (-) TimerEvent: {}
+[34.725113] (-) TimerEvent: {}
+[34.826309] (-) TimerEvent: {}
+[34.927373] (-) TimerEvent: {}
+[35.028345] (-) TimerEvent: {}
+[35.129035] (-) TimerEvent: {}
+[35.230508] (-) TimerEvent: {}
+[35.331253] (-) TimerEvent: {}
+[35.432889] (-) TimerEvent: {}
+[35.537703] (-) TimerEvent: {}
+[35.650068] (-) TimerEvent: {}
+[35.751796] (-) TimerEvent: {}
+[35.852697] (-) TimerEvent: {}
+[36.389561] (-) TimerEvent: {}
+[36.490712] (-) TimerEvent: {}
+[36.603942] (-) TimerEvent: {}
+[36.756692] (-) TimerEvent: {}
+[36.857567] (-) TimerEvent: {}
+[36.958824] (-) TimerEvent: {}
+[37.060870] (-) TimerEvent: {}
+[37.171429] (-) TimerEvent: {}
+[37.282513] (-) TimerEvent: {}
+[37.409536] (-) TimerEvent: {}
+[37.510311] (-) TimerEvent: {}
+[37.621344] (-) TimerEvent: {}
+[37.722873] (-) TimerEvent: {}
+[37.833775] (-) TimerEvent: {}
+[37.939850] (-) TimerEvent: {}
+[38.040680] (-) TimerEvent: {}
+[38.141495] (-) TimerEvent: {}
+[38.243078] (-) TimerEvent: {}
+[38.343898] (-) TimerEvent: {}
+[38.444511] (-) TimerEvent: {}
+[38.545248] (-) TimerEvent: {}
+[38.645896] (-) TimerEvent: {}
+[38.748208] (-) TimerEvent: {}
+[38.850222] (-) TimerEvent: {}
+[38.950902] (-) TimerEvent: {}
+[39.051862] (-) TimerEvent: {}
+[39.152820] (-) TimerEvent: {}
+[39.253780] (-) TimerEvent: {}
+[39.357771] (-) TimerEvent: {}
+[39.460306] (-) TimerEvent: {}
+[39.565333] (-) TimerEvent: {}
+[39.666635] (-) TimerEvent: {}
+[39.767643] (-) TimerEvent: {}
+[39.868402] (-) TimerEvent: {}
+[39.969238] (-) TimerEvent: {}
+[40.070084] (-) TimerEvent: {}
+[40.171027] (-) TimerEvent: {}
+[40.271843] (-) TimerEvent: {}
+[40.373816] (-) TimerEvent: {}
+[40.474534] (-) TimerEvent: {}
+[40.578097] (-) TimerEvent: {}
+[40.679008] (-) TimerEvent: {}
+[40.779920] (-) TimerEvent: {}
+[40.881774] (-) TimerEvent: {}
+[40.985098] (-) TimerEvent: {}
+[41.086957] (-) TimerEvent: {}
+[41.187818] (-) TimerEvent: {}
+[41.290403] (-) TimerEvent: {}
+[41.391196] (-) TimerEvent: {}
+[41.493432] (-) TimerEvent: {}
+[41.594345] (-) TimerEvent: {}
+[41.706863] (-) TimerEvent: {}
+[41.810331] (-) TimerEvent: {}
+[41.936362] (-) TimerEvent: {}
+[42.037275] (-) TimerEvent: {}
+[42.141376] (-) TimerEvent: {}
+[42.246293] (-) TimerEvent: {}
+[42.367319] (-) TimerEvent: {}
+[42.470018] (-) TimerEvent: {}
+[42.576627] (-) TimerEvent: {}
+[42.678100] (-) TimerEvent: {}
+[42.780338] (-) TimerEvent: {}
+[42.883375] (-) TimerEvent: {}
+[42.984118] (-) TimerEvent: {}
+[43.084904] (-) TimerEvent: {}
+[43.188197] (-) TimerEvent: {}
+[43.288917] (-) TimerEvent: {}
+[43.392116] (-) TimerEvent: {}
+[43.495397] (-) TimerEvent: {}
+[43.596515] (-) TimerEvent: {}
+[43.699970] (-) TimerEvent: {}
+[43.804294] (-) TimerEvent: {}
+[43.905635] (-) TimerEvent: {}
+[44.009403] (-) TimerEvent: {}
+[44.110253] (-) TimerEvent: {}
+[44.211142] (-) TimerEvent: {}
+[44.319528] (-) TimerEvent: {}
+[44.421820] (-) TimerEvent: {}
+[44.522515] (-) TimerEvent: {}
+[44.649922] (-) TimerEvent: {}
+[44.769455] (-) TimerEvent: {}
+[44.870539] (-) TimerEvent: {}
+[44.973934] (-) TimerEvent: {}
+[45.076507] (-) TimerEvent: {}
+[45.177581] (-) TimerEvent: {}
+[45.278804] (-) TimerEvent: {}
+[45.379640] (-) TimerEvent: {}
+[45.480780] (-) TimerEvent: {}
+[45.581477] (-) TimerEvent: {}
+[45.682432] (-) TimerEvent: {}
+[45.786312] (-) TimerEvent: {}
+[45.887053] (-) TimerEvent: {}
+[45.988103] (-) TimerEvent: {}
+[46.089499] (-) TimerEvent: {}
+[46.193517] (-) TimerEvent: {}
+[46.306768] (-) TimerEvent: {}
+[46.408026] (-) TimerEvent: {}
+[46.508829] (-) TimerEvent: {}
+[46.610130] (-) TimerEvent: {}
+[46.710916] (-) TimerEvent: {}
+[46.811927] (-) TimerEvent: {}
+[46.912686] (-) TimerEvent: {}
+[47.013470] (-) TimerEvent: {}
+[47.114593] (-) TimerEvent: {}
+[47.215464] (-) TimerEvent: {}
+[47.316528] (-) TimerEvent: {}
+[47.419083] (-) TimerEvent: {}
+[47.520151] (-) TimerEvent: {}
+[47.628273] (-) TimerEvent: {}
+[47.729442] (-) TimerEvent: {}
+[47.835441] (-) TimerEvent: {}
+[47.936317] (-) TimerEvent: {}
+[48.040801] (-) TimerEvent: {}
+[48.141468] (-) TimerEvent: {}
+[48.245430] (-) TimerEvent: {}
+[48.346041] (-) TimerEvent: {}
+[48.455324] (-) TimerEvent: {}
+[48.560609] (-) TimerEvent: {}
+[48.661988] (-) TimerEvent: {}
+[48.762599] (-) TimerEvent: {}
+[48.864772] (-) TimerEvent: {}
+[48.965423] (-) TimerEvent: {}
+[49.067894] (-) TimerEvent: {}
+[49.171664] (-) TimerEvent: {}
+[49.272712] (-) TimerEvent: {}
+[49.373994] (-) TimerEvent: {}
+[49.475004] (-) TimerEvent: {}
+[49.576578] (-) TimerEvent: {}
+[49.677273] (-) TimerEvent: {}
+[49.781240] (-) TimerEvent: {}
+[49.882830] (-) TimerEvent: {}
+[49.983643] (-) TimerEvent: {}
+[50.085675] (-) TimerEvent: {}
+[50.192563] (-) TimerEvent: {}
+[50.293178] (-) TimerEvent: {}
+[50.394032] (-) TimerEvent: {}
+[50.494830] (-) TimerEvent: {}
+[50.595730] (-) TimerEvent: {}
+[50.697086] (-) TimerEvent: {}
+[50.798096] (-) TimerEvent: {}
+[50.900283] (-) TimerEvent: {}
+[51.001780] (-) TimerEvent: {}
+[51.103531] (-) TimerEvent: {}
+[51.204370] (-) TimerEvent: {}
+[51.305130] (-) TimerEvent: {}
+[51.406305] (-) TimerEvent: {}
+[51.507166] (-) TimerEvent: {}
+[51.608318] (-) TimerEvent: {}
+[51.710766] (-) TimerEvent: {}
+[51.811766] (-) TimerEvent: {}
+[51.914727] (-) TimerEvent: {}
+[52.015435] (-) TimerEvent: {}
+[52.116280] (-) TimerEvent: {}
+[52.217264] (-) TimerEvent: {}
+[52.318340] (-) TimerEvent: {}
+[52.419080] (-) TimerEvent: {}
+[52.519908] (-) TimerEvent: {}
+[52.620680] (-) TimerEvent: {}
+[52.722637] (-) TimerEvent: {}
+[52.823252] (-) TimerEvent: {}
+[52.924192] (-) TimerEvent: {}
+[53.026035] (-) TimerEvent: {}
+[53.126796] (-) TimerEvent: {}
+[53.227621] (-) TimerEvent: {}
+[53.328569] (-) TimerEvent: {}
+[53.437757] (-) TimerEvent: {}
+[53.539010] (-) TimerEvent: {}
+[53.644980] (-) TimerEvent: {}
+[53.748248] (-) TimerEvent: {}
+[53.848961] (-) TimerEvent: {}
+[53.949976] (-) TimerEvent: {}
+[54.050686] (-) TimerEvent: {}
+[54.151575] (-) TimerEvent: {}
+[54.252415] (-) TimerEvent: {}
+[54.353400] (-) TimerEvent: {}
+[54.454365] (-) TimerEvent: {}
+[54.555594] (-) TimerEvent: {}
+[54.656575] (-) TimerEvent: {}
+[54.757611] (-) TimerEvent: {}
+[54.858219] (-) TimerEvent: {}
+[54.959118] (-) TimerEvent: {}
+[55.060465] (-) TimerEvent: {}
+[55.161221] (-) TimerEvent: {}
+[55.262109] (-) TimerEvent: {}
+[55.362976] (-) TimerEvent: {}
+[55.463776] (-) TimerEvent: {}
+[55.565241] (-) TimerEvent: {}
+[55.666521] (-) TimerEvent: {}
+[55.767759] (-) TimerEvent: {}
+[55.897680] (-) TimerEvent: {}
+[55.999119] (-) TimerEvent: {}
+[56.099851] (-) TimerEvent: {}
+[56.200542] (-) TimerEvent: {}
+[56.302219] (-) TimerEvent: {}
+[56.402935] (-) TimerEvent: {}
+[56.503838] (-) TimerEvent: {}
+[56.605521] (-) TimerEvent: {}
+[56.706880] (-) TimerEvent: {}
+[56.807741] (-) TimerEvent: {}
+[56.909272] (-) TimerEvent: {}
+[57.010000] (-) TimerEvent: {}
+[57.110786] (-) TimerEvent: {}
+[57.211844] (-) TimerEvent: {}
+[57.312667] (-) TimerEvent: {}
+[57.413550] (-) TimerEvent: {}
+[57.522162] (-) TimerEvent: {}
+[57.627736] (-) TimerEvent: {}
+[57.731289] (-) TimerEvent: {}
+[57.834116] (-) TimerEvent: {}
+[57.937382] (-) TimerEvent: {}
+[58.038353] (-) TimerEvent: {}
+[58.140109] (-) TimerEvent: {}
+[58.242957] (-) TimerEvent: {}
+[58.343891] (-) TimerEvent: {}
+[58.444720] (-) TimerEvent: {}
+[58.545482] (-) TimerEvent: {}
+[58.646409] (-) TimerEvent: {}
+[58.748571] (-) TimerEvent: {}
+[58.849599] (-) TimerEvent: {}
+[58.950368] (-) TimerEvent: {}
+[59.051248] (-) TimerEvent: {}
+[59.152953] (-) TimerEvent: {}
+[59.254551] (-) TimerEvent: {}
+[59.358061] (-) TimerEvent: {}
+[59.459549] (-) TimerEvent: {}
+[59.560983] (-) TimerEvent: {}
+[59.661688] (-) TimerEvent: {}
+[59.762517] (-) TimerEvent: {}
+[59.865428] (-) TimerEvent: {}
+[59.966223] (-) TimerEvent: {}
+[59.992952] (cmd_vel_mux) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable cmd_vel_mux_node\x1b[0m\n'}
+[60.066388] (-) TimerEvent: {}
+[60.168006] (-) TimerEvent: {}
+[60.268759] (-) TimerEvent: {}
+[60.374500] (-) TimerEvent: {}
+[60.475681] (-) TimerEvent: {}
+[60.576672] (-) TimerEvent: {}
+[60.677771] (-) TimerEvent: {}
+[60.785889] (-) TimerEvent: {}
+[60.887499] (-) TimerEvent: {}
+[60.988258] (-) TimerEvent: {}
+[61.089106] (-) TimerEvent: {}
+[61.190097] (-) TimerEvent: {}
+[61.290920] (-) TimerEvent: {}
+[61.391680] (-) TimerEvent: {}
+[61.420467] (cmd_vel_mux) StdoutLine: {'line': b'[ 75%] Built target cmd_vel_mux_node\n'}
+[61.491886] (-) TimerEvent: {}
+[61.593146] (-) TimerEvent: {}
+[61.694008] (-) TimerEvent: {}
+[61.794773] (-) TimerEvent: {}
+[61.895664] (-) TimerEvent: {}
+[61.996627] (-) TimerEvent: {}
+[62.097711] (-) TimerEvent: {}
+[62.198571] (-) TimerEvent: {}
+[62.299354] (-) TimerEvent: {}
+[62.400171] (-) TimerEvent: {}
+[62.500905] (-) TimerEvent: {}
+[62.601875] (-) TimerEvent: {}
+[62.703032] (-) TimerEvent: {}
+[62.803939] (-) TimerEvent: {}
+[62.904655] (-) TimerEvent: {}
+[63.005587] (-) TimerEvent: {}
+[63.106407] (-) TimerEvent: {}
+[63.207694] (-) TimerEvent: {}
+[63.308844] (-) TimerEvent: {}
+[63.409526] (-) TimerEvent: {}
+[63.514393] (-) TimerEvent: {}
+[63.615068] (-) TimerEvent: {}
+[63.715848] (-) TimerEvent: {}
+[63.816638] (-) TimerEvent: {}
+[63.917553] (-) TimerEvent: {}
+[64.018390] (-) TimerEvent: {}
+[64.119143] (-) TimerEvent: {}
+[64.220179] (-) TimerEvent: {}
+[64.321006] (-) TimerEvent: {}
+[64.421897] (-) TimerEvent: {}
+[64.522561] (-) TimerEvent: {}
+[64.623670] (-) TimerEvent: {}
+[64.724530] (-) TimerEvent: {}
+[64.825168] (-) TimerEvent: {}
+[64.925919] (-) TimerEvent: {}
+[65.026720] (-) TimerEvent: {}
+[65.129109] (-) TimerEvent: {}
+[65.237218] (-) TimerEvent: {}
+[65.337935] (-) TimerEvent: {}
+[65.438590] (-) TimerEvent: {}
+[65.539335] (-) TimerEvent: {}
+[65.643363] (-) TimerEvent: {}
+[65.745574] (-) TimerEvent: {}
+[65.846881] (-) TimerEvent: {}
+[65.948066] (-) TimerEvent: {}
+[66.048745] (-) TimerEvent: {}
+[66.151476] (-) TimerEvent: {}
+[66.252385] (-) TimerEvent: {}
+[66.356201] (-) TimerEvent: {}
+[66.460218] (-) TimerEvent: {}
+[66.561452] (-) TimerEvent: {}
+[66.662643] (-) TimerEvent: {}
+[66.764105] (-) TimerEvent: {}
+[66.865362] (-) TimerEvent: {}
+[66.966267] (-) TimerEvent: {}
+[67.067031] (-) TimerEvent: {}
+[67.167772] (-) TimerEvent: {}
+[67.269379] (-) TimerEvent: {}
+[67.370193] (-) TimerEvent: {}
+[67.472809] (-) TimerEvent: {}
+[67.573658] (-) TimerEvent: {}
+[67.674442] (-) TimerEvent: {}
+[67.777730] (-) TimerEvent: {}
+[67.882608] (-) TimerEvent: {}
+[67.993203] (-) TimerEvent: {}
+[68.094781] (-) TimerEvent: {}
+[68.195470] (-) TimerEvent: {}
+[68.296036] (-) TimerEvent: {}
+[68.396651] (-) TimerEvent: {}
+[68.497378] (-) TimerEvent: {}
+[68.598072] (-) TimerEvent: {}
+[68.698737] (-) TimerEvent: {}
+[68.799394] (-) TimerEvent: {}
+[68.900254] (-) TimerEvent: {}
+[69.001037] (-) TimerEvent: {}
+[69.101705] (-) TimerEvent: {}
+[69.202699] (-) TimerEvent: {}
+[69.303349] (-) TimerEvent: {}
+[69.347731] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator_node.cpp:1\x1b[m\x1b[K:\n'}
+[69.348330] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:94:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[69.348786] (very_simple_robot_simulator) StderrLine: {'line': b'   94 |   void new_pose( const geometry_msgs::msg::Pose::ConstPtr& pose_msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[69.349368] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[69.358687] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7\x1b[m\x1b[K,\n'}
+[69.359333] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:8\x1b[m\x1b[K,\n'}
+[69.359929] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator_node.cpp:1\x1b[m\x1b[K:\n'}
+[69.360378] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[69.360833] (very_simple_robot_simulator) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[69.361246] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[69.361573] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator_node.cpp:1\x1b[m\x1b[K:\n'}
+[69.361749] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:96:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[69.362426] (very_simple_robot_simulator) StderrLine: {'line': b'   96 |   void set_map( const nav_msgs::msg::OccupancyGrid::ConstPtr& msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[69.362829] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[69.363134] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7\x1b[m\x1b[K,\n'}
+[69.363476] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:9\x1b[m\x1b[K,\n'}
+[69.363737] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator_node.cpp:1\x1b[m\x1b[K:\n'}
+[69.363978] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[69.364269] (very_simple_robot_simulator) StderrLine: {'line': b'  124 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[69.364548] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[69.403997] (-) TimerEvent: {}
+[69.504793] (-) TimerEvent: {}
+[69.605475] (-) TimerEvent: {}
+[69.706321] (-) TimerEvent: {}
+[69.807061] (-) TimerEvent: {}
+[69.907953] (-) TimerEvent: {}
+[70.008710] (-) TimerEvent: {}
+[70.109680] (-) TimerEvent: {}
+[70.210492] (-) TimerEvent: {}
+[70.311241] (-) TimerEvent: {}
+[70.412064] (-) TimerEvent: {}
+[70.513065] (-) TimerEvent: {}
+[70.614034] (-) TimerEvent: {}
+[70.662490] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[70.663295] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:94:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[70.663704] (very_simple_robot_simulator) StderrLine: {'line': b'   94 |   void new_pose( const geometry_msgs::msg::Pose::ConstPtr& pose_msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[70.664110] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[70.664655] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7\x1b[m\x1b[K,\n'}
+[70.665106] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:8\x1b[m\x1b[K,\n'}
+[70.676904] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[70.677685] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[70.678067] (very_simple_robot_simulator) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[70.681351] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[70.681885] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[70.682270] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:96:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[70.682724] (very_simple_robot_simulator) StderrLine: {'line': b'   96 |   void set_map( const nav_msgs::msg::OccupancyGrid::ConstPtr& msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[70.683090] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[70.683529] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7\x1b[m\x1b[K,\n'}
+[70.683868] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:9\x1b[m\x1b[K,\n'}
+[70.684213] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[70.684541] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[70.684834] (very_simple_robot_simulator) StderrLine: {'line': b'  124 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[70.685195] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[70.714330] (-) TimerEvent: {}
+[70.815135] (-) TimerEvent: {}
+[70.915755] (-) TimerEvent: {}
+[71.016694] (-) TimerEvent: {}
+[71.117657] (-) TimerEvent: {}
+[71.218417] (-) TimerEvent: {}
+[71.319384] (-) TimerEvent: {}
+[71.420223] (-) TimerEvent: {}
+[71.520958] (-) TimerEvent: {}
+[71.621709] (-) TimerEvent: {}
+[71.722876] (-) TimerEvent: {}
+[71.823714] (-) TimerEvent: {}
+[71.924644] (-) TimerEvent: {}
+[72.025732] (-) TimerEvent: {}
+[72.073673] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:224:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[72.074372] (very_simple_robot_simulator) StderrLine: {'line': b'  224 | KinectSimulator::new_pose( const geometry_msgs::msg::Pose::ConstPtr& pose_msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[72.074878] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                               \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[72.080528] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7\x1b[m\x1b[K,\n'}
+[72.081124] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:8\x1b[m\x1b[K,\n'}
+[72.081576] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[72.081980] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[72.082387] (very_simple_robot_simulator) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[72.082781] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[72.125338] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:317:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[72.125988] (-) TimerEvent: {}
+[72.126384] (very_simple_robot_simulator) StderrLine: {'line': b'  317 | KinectSimulator::set_map( const nav_msgs::msg::OccupancyGrid::ConstPtr& msg \x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[72.126828] (very_simple_robot_simulator) StderrLine: {'line': b'      |                                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[72.132420] (very_simple_robot_simulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp:7\x1b[m\x1b[K,\n'}
+[72.132993] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator/kinect_simulator.h:9\x1b[m\x1b[K,\n'}
+[72.133333] (very_simple_robot_simulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/fbr/Lab2/src/very_simple_robot_simulator/src/kinect_simulator.cpp:1\x1b[m\x1b[K:\n'}
+[72.133636] (very_simple_robot_simulator) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:124:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[72.134020] (very_simple_robot_simulator) StderrLine: {'line': b'  124 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[72.134289] (very_simple_robot_simulator) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[72.226332] (-) TimerEvent: {}
+[72.327200] (-) TimerEvent: {}
+[72.428003] (-) TimerEvent: {}
+[72.528733] (-) TimerEvent: {}
+[72.629406] (-) TimerEvent: {}
+[72.730331] (-) TimerEvent: {}
+[72.830994] (-) TimerEvent: {}
+[72.932109] (-) TimerEvent: {}
+[73.032789] (-) TimerEvent: {}
+[73.133773] (-) TimerEvent: {}
+[73.235037] (-) TimerEvent: {}
+[73.336714] (-) TimerEvent: {}
+[73.440011] (-) TimerEvent: {}
+[73.540894] (-) TimerEvent: {}
+[73.641828] (-) TimerEvent: {}
+[73.743413] (-) TimerEvent: {}
+[73.844121] (-) TimerEvent: {}
+[73.944923] (-) TimerEvent: {}
+[74.045794] (-) TimerEvent: {}
+[74.153093] (-) TimerEvent: {}
+[74.270283] (-) TimerEvent: {}
+[74.375585] (-) TimerEvent: {}
+[74.476809] (-) TimerEvent: {}
+[74.577548] (-) TimerEvent: {}
+[74.678155] (-) TimerEvent: {}
+[74.778682] (-) TimerEvent: {}
+[74.879310] (-) TimerEvent: {}
+[74.979993] (-) TimerEvent: {}
+[75.080776] (-) TimerEvent: {}
+[75.181279] (-) TimerEvent: {}
+[75.281887] (-) TimerEvent: {}
+[75.382858] (-) TimerEvent: {}
+[75.483577] (-) TimerEvent: {}
+[75.584580] (-) TimerEvent: {}
+[75.686391] (-) TimerEvent: {}
+[75.791883] (-) TimerEvent: {}
+[75.898166] (-) TimerEvent: {}
+[76.042593] (-) TimerEvent: {}
+[76.144809] (-) TimerEvent: {}
+[76.246096] (-) TimerEvent: {}
+[76.346907] (-) TimerEvent: {}
+[76.447941] (-) TimerEvent: {}
+[76.550345] (-) TimerEvent: {}
+[76.651908] (-) TimerEvent: {}
+[76.753068] (-) TimerEvent: {}
+[76.853936] (-) TimerEvent: {}
+[76.954909] (-) TimerEvent: {}
+[77.055816] (-) TimerEvent: {}
+[77.156766] (-) TimerEvent: {}
+[77.257754] (-) TimerEvent: {}
+[77.358561] (-) TimerEvent: {}
+[77.459253] (-) TimerEvent: {}
+[77.561085] (-) TimerEvent: {}
+[77.810963] (-) TimerEvent: {}
+[78.561656] (-) TimerEvent: {}
+[78.718236] (-) TimerEvent: {}
+[78.819188] (-) TimerEvent: {}
+[79.077857] (-) TimerEvent: {}
+[79.216570] (-) TimerEvent: {}
+[79.407541] (-) TimerEvent: {}
+[79.508346] (-) TimerEvent: {}
+[79.609558] (-) TimerEvent: {}
+[79.724274] (-) TimerEvent: {}
+[79.830482] (-) TimerEvent: {}
+[79.933542] (-) TimerEvent: {}
+[80.034427] (-) TimerEvent: {}
+[80.163024] (-) TimerEvent: {}
+[80.263743] (-) TimerEvent: {}
+[80.368094] (-) TimerEvent: {}
+[80.468821] (-) TimerEvent: {}
+[80.569879] (-) TimerEvent: {}
+[80.671464] (-) TimerEvent: {}
+[80.772147] (-) TimerEvent: {}
+[80.872995] (-) TimerEvent: {}
+[80.979952] (-) TimerEvent: {}
+[81.080846] (-) TimerEvent: {}
+[81.192658] (-) TimerEvent: {}
+[81.294704] (-) TimerEvent: {}
+[81.395588] (-) TimerEvent: {}
+[81.496438] (-) TimerEvent: {}
+[81.597567] (-) TimerEvent: {}
+[81.698280] (-) TimerEvent: {}
+[81.799375] (-) TimerEvent: {}
+[81.900294] (-) TimerEvent: {}
+[82.013136] (-) TimerEvent: {}
+[82.124096] (-) TimerEvent: {}
+[82.224888] (-) TimerEvent: {}
+[82.325674] (-) TimerEvent: {}
+[82.426522] (-) TimerEvent: {}
+[82.527242] (-) TimerEvent: {}
+[82.628104] (-) TimerEvent: {}
+[82.728902] (-) TimerEvent: {}
+[82.829673] (-) TimerEvent: {}
+[82.930629] (-) TimerEvent: {}
+[83.031487] (-) TimerEvent: {}
+[83.132372] (-) TimerEvent: {}
+[83.233333] (-) TimerEvent: {}
+[83.334042] (-) TimerEvent: {}
+[83.442272] (-) TimerEvent: {}
+[83.542898] (-) TimerEvent: {}
+[83.644773] (-) TimerEvent: {}
+[83.745847] (-) TimerEvent: {}
+[83.846739] (-) TimerEvent: {}
+[83.947637] (-) TimerEvent: {}
+[84.048511] (-) TimerEvent: {}
+[84.149379] (-) TimerEvent: {}
+[84.250257] (-) TimerEvent: {}
+[84.351385] (-) TimerEvent: {}
+[84.452242] (-) TimerEvent: {}
+[84.553200] (-) TimerEvent: {}
+[84.654127] (-) TimerEvent: {}
+[84.755276] (-) TimerEvent: {}
+[84.855981] (-) TimerEvent: {}
+[84.956791] (-) TimerEvent: {}
+[85.057792] (-) TimerEvent: {}
+[85.158581] (-) TimerEvent: {}
+[85.259329] (-) TimerEvent: {}
+[85.360158] (-) TimerEvent: {}
+[85.461075] (-) TimerEvent: {}
+[85.561876] (-) TimerEvent: {}
+[85.662671] (-) TimerEvent: {}
+[85.763753] (-) TimerEvent: {}
+[85.864677] (-) TimerEvent: {}
+[85.965450] (-) TimerEvent: {}
+[86.066300] (-) TimerEvent: {}
+[86.167275] (-) TimerEvent: {}
+[86.268041] (-) TimerEvent: {}
+[86.368961] (-) TimerEvent: {}
+[86.470388] (-) TimerEvent: {}
+[86.571586] (-) TimerEvent: {}
+[86.672476] (-) TimerEvent: {}
+[86.773235] (-) TimerEvent: {}
+[86.874003] (-) TimerEvent: {}
+[86.974764] (-) TimerEvent: {}
+[87.075574] (-) TimerEvent: {}
+[87.176335] (-) TimerEvent: {}
+[87.277091] (-) TimerEvent: {}
+[87.377873] (-) TimerEvent: {}
+[87.478723] (-) TimerEvent: {}
+[87.579617] (-) TimerEvent: {}
+[87.680397] (-) TimerEvent: {}
+[87.781275] (-) TimerEvent: {}
+[87.882193] (-) TimerEvent: {}
+[87.983259] (-) TimerEvent: {}
+[88.084731] (-) TimerEvent: {}
+[88.186391] (-) TimerEvent: {}
+[88.287541] (-) TimerEvent: {}
+[88.388864] (-) TimerEvent: {}
+[88.489984] (-) TimerEvent: {}
+[88.591051] (-) TimerEvent: {}
+[88.692289] (-) TimerEvent: {}
+[88.793318] (-) TimerEvent: {}
+[88.894101] (-) TimerEvent: {}
+[88.994897] (-) TimerEvent: {}
+[89.101887] (-) TimerEvent: {}
+[89.202885] (-) TimerEvent: {}
+[89.304700] (-) TimerEvent: {}
+[89.405618] (-) TimerEvent: {}
+[89.506452] (-) TimerEvent: {}
+[89.607365] (-) TimerEvent: {}
+[89.708250] (-) TimerEvent: {}
+[89.809078] (-) TimerEvent: {}
+[89.909859] (-) TimerEvent: {}
+[90.010567] (-) TimerEvent: {}
+[90.111539] (-) TimerEvent: {}
+[90.212441] (-) TimerEvent: {}
+[90.313268] (-) TimerEvent: {}
+[90.413963] (-) TimerEvent: {}
+[90.514894] (-) TimerEvent: {}
+[90.616407] (-) TimerEvent: {}
+[90.717801] (-) TimerEvent: {}
+[90.818551] (-) TimerEvent: {}
+[90.919374] (-) TimerEvent: {}
+[91.020091] (-) TimerEvent: {}
+[91.120726] (-) TimerEvent: {}
+[91.221527] (-) TimerEvent: {}
+[91.322300] (-) TimerEvent: {}
+[91.422981] (-) TimerEvent: {}
+[91.523677] (-) TimerEvent: {}
+[91.624448] (-) TimerEvent: {}
+[91.725324] (-) TimerEvent: {}
+[91.826067] (-) TimerEvent: {}
+[91.926810] (-) TimerEvent: {}
+[92.027770] (-) TimerEvent: {}
+[92.128517] (-) TimerEvent: {}
+[92.229350] (-) TimerEvent: {}
+[92.330337] (-) TimerEvent: {}
+[92.431398] (-) TimerEvent: {}
+[92.532732] (-) TimerEvent: {}
+[92.633712] (-) TimerEvent: {}
+[92.734638] (-) TimerEvent: {}
+[92.835407] (-) TimerEvent: {}
+[92.936097] (-) TimerEvent: {}
+[93.036832] (-) TimerEvent: {}
+[93.150762] (-) TimerEvent: {}
+[93.255324] (-) TimerEvent: {}
+[93.356240] (-) TimerEvent: {}
+[93.456947] (-) TimerEvent: {}
+[93.557846] (-) TimerEvent: {}
+[93.658630] (-) TimerEvent: {}
+[93.759423] (-) TimerEvent: {}
+[93.860273] (-) TimerEvent: {}
+[93.961028] (-) TimerEvent: {}
+[94.061841] (-) TimerEvent: {}
+[94.163063] (-) TimerEvent: {}
+[94.264225] (-) TimerEvent: {}
+[94.365370] (-) TimerEvent: {}
+[94.466238] (-) TimerEvent: {}
+[94.567295] (-) TimerEvent: {}
+[94.676891] (-) TimerEvent: {}
+[94.784161] (-) TimerEvent: {}
+[94.884853] (-) TimerEvent: {}
+[94.985623] (-) TimerEvent: {}
+[95.086319] (-) TimerEvent: {}
+[95.187070] (-) TimerEvent: {}
+[95.287787] (-) TimerEvent: {}
+[95.388475] (-) TimerEvent: {}
+[95.489171] (-) TimerEvent: {}
+[95.589966] (-) TimerEvent: {}
+[95.690773] (-) TimerEvent: {}
+[95.791822] (-) TimerEvent: {}
+[95.892591] (-) TimerEvent: {}
+[95.993443] (-) TimerEvent: {}
+[96.094190] (-) TimerEvent: {}
+[96.194968] (-) TimerEvent: {}
+[96.305859] (-) TimerEvent: {}
+[96.407000] (-) TimerEvent: {}
+[96.514358] (-) TimerEvent: {}
+[96.615781] (-) TimerEvent: {}
+[96.716888] (-) TimerEvent: {}
+[96.817743] (-) TimerEvent: {}
+[96.918640] (-) TimerEvent: {}
+[97.019823] (-) TimerEvent: {}
+[97.120516] (-) TimerEvent: {}
+[97.221322] (-) TimerEvent: {}
+[97.321966] (-) TimerEvent: {}
+[97.422736] (-) TimerEvent: {}
+[97.523590] (-) TimerEvent: {}
+[97.624514] (-) TimerEvent: {}
+[97.725259] (-) TimerEvent: {}
+[97.826265] (-) TimerEvent: {}
+[97.927492] (-) TimerEvent: {}
+[98.028248] (-) TimerEvent: {}
+[98.093720] (cmd_vel_mux) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcmd_vel_mux.so\x1b[0m\n'}
+[98.128446] (-) TimerEvent: {}
+[98.229232] (-) TimerEvent: {}
+[98.330197] (-) TimerEvent: {}
+[98.431000] (-) TimerEvent: {}
+[98.531766] (-) TimerEvent: {}
+[98.632476] (-) TimerEvent: {}
+[98.733295] (-) TimerEvent: {}
+[98.834079] (-) TimerEvent: {}
+[98.935025] (-) TimerEvent: {}
+[99.035802] (-) TimerEvent: {}
+[99.136654] (-) TimerEvent: {}
+[99.237455] (-) TimerEvent: {}
+[99.338201] (-) TimerEvent: {}
+[99.439155] (-) TimerEvent: {}
+[99.540081] (-) TimerEvent: {}
+[99.641384] (-) TimerEvent: {}
+[99.742351] (-) TimerEvent: {}
+[99.843063] (-) TimerEvent: {}
+[99.943791] (-) TimerEvent: {}
+[100.044643] (-) TimerEvent: {}
+[100.145633] (-) TimerEvent: {}
+[100.246567] (-) TimerEvent: {}
+[100.347700] (-) TimerEvent: {}
+[100.448648] (-) TimerEvent: {}
+[100.549247] (-) TimerEvent: {}
+[100.651551] (-) TimerEvent: {}
+[100.752260] (-) TimerEvent: {}
+[100.852849] (-) TimerEvent: {}
+[100.953651] (-) TimerEvent: {}
+[101.056373] (-) TimerEvent: {}
+[101.060929] (cmd_vel_mux) StdoutLine: {'line': b'[100%] Built target cmd_vel_mux\n'}
+[101.082551] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[101.157439] (-) TimerEvent: {}
+[101.161276] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'install'}
+[101.195254] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fbr/Lab2/build/cmd_vel_mux'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[101.214154] (cmd_vel_mux) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[101.226063] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node\n'}
+[101.235528] (cmd_vel_mux) StdoutLine: {'line': b'-- Set runtime path of "/home/fbr/Lab2/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node" to ""\n'}
+[101.236216] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/lib/libcmd_vel_mux.so\n'}
+[101.257642] (-) TimerEvent: {}
+[101.274464] (cmd_vel_mux) StdoutLine: {'line': b'-- Set runtime path of "/home/fbr/Lab2/install/cmd_vel_mux/lib/libcmd_vel_mux.so" to ""\n'}
+[101.274966] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/include/cmd_vel_mux\n'}
+[101.277432] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp\n'}
+[101.277873] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/config\n'}
+[101.279571] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml\n'}
+[101.281775] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch\n'}
+[101.283338] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py\n'}
+[101.284420] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py\n'}
+[101.288908] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux\n'}
+[101.291028] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux\n'}
+[101.293490] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh\n'}
+[101.296062] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv\n'}
+[101.296875] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh\n'}
+[101.297535] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv\n'}
+[101.298457] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash\n'}
+[101.299127] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh\n'}
+[101.299644] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh\n'}
+[101.300029] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv\n'}
+[101.300405] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv\n'}
+[101.300871] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux\n'}
+[101.301236] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux\n'}
+[101.301860] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake\n'}
+[101.302471] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake\n'}
+[101.304499] (cmd_vel_mux) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.xml\n'}
+[101.308347] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[101.357887] (-) TimerEvent: {}
+[101.442523] (cmd_vel_mux) JobEnded: {'identifier': 'cmd_vel_mux', 'rc': 0}
+[101.458133] (-) TimerEvent: {}
+[101.558921] (-) TimerEvent: {}
+[101.659698] (-) TimerEvent: {}
+[101.760868] (-) TimerEvent: {}
+[101.861797] (-) TimerEvent: {}
+[101.962665] (-) TimerEvent: {}
+[102.063406] (-) TimerEvent: {}
+[102.164284] (-) TimerEvent: {}
+[102.265033] (-) TimerEvent: {}
+[102.365815] (-) TimerEvent: {}
+[102.468382] (-) TimerEvent: {}
+[102.569269] (-) TimerEvent: {}
+[102.670127] (-) TimerEvent: {}
+[102.772075] (-) TimerEvent: {}
+[102.872903] (-) TimerEvent: {}
+[102.973897] (-) TimerEvent: {}
+[103.074787] (-) TimerEvent: {}
+[103.175590] (-) TimerEvent: {}
+[103.276662] (-) TimerEvent: {}
+[103.377658] (-) TimerEvent: {}
+[103.478658] (-) TimerEvent: {}
+[103.579527] (-) TimerEvent: {}
+[103.680185] (-) TimerEvent: {}
+[103.780826] (-) TimerEvent: {}
+[103.881705] (-) TimerEvent: {}
+[103.982479] (-) TimerEvent: {}
+[104.083374] (-) TimerEvent: {}
+[104.184105] (-) TimerEvent: {}
+[104.284914] (-) TimerEvent: {}
+[104.385921] (-) TimerEvent: {}
+[104.486691] (-) TimerEvent: {}
+[104.587464] (-) TimerEvent: {}
+[104.688058] (-) TimerEvent: {}
+[104.788758] (-) TimerEvent: {}
+[104.889675] (-) TimerEvent: {}
+[104.990354] (-) TimerEvent: {}
+[105.091030] (-) TimerEvent: {}
+[105.191756] (-) TimerEvent: {}
+[105.292443] (-) TimerEvent: {}
+[105.393125] (-) TimerEvent: {}
+[105.493851] (-) TimerEvent: {}
+[105.594693] (-) TimerEvent: {}
+[105.695578] (-) TimerEvent: {}
+[105.796542] (-) TimerEvent: {}
+[105.897126] (-) TimerEvent: {}
+[105.997976] (-) TimerEvent: {}
+[106.098757] (-) TimerEvent: {}
+[106.199580] (-) TimerEvent: {}
+[106.301255] (-) TimerEvent: {}
+[106.402130] (-) TimerEvent: {}
+[106.503043] (-) TimerEvent: {}
+[106.603873] (-) TimerEvent: {}
+[106.704640] (-) TimerEvent: {}
+[106.805627] (-) TimerEvent: {}
+[106.906342] (-) TimerEvent: {}
+[107.007108] (-) TimerEvent: {}
+[107.108160] (-) TimerEvent: {}
+[107.208958] (-) TimerEvent: {}
+[107.309797] (-) TimerEvent: {}
+[107.410691] (-) TimerEvent: {}
+[107.511642] (-) TimerEvent: {}
+[107.612507] (-) TimerEvent: {}
+[107.713396] (-) TimerEvent: {}
+[107.814633] (-) TimerEvent: {}
+[107.915453] (-) TimerEvent: {}
+[108.016373] (-) TimerEvent: {}
+[108.117337] (-) TimerEvent: {}
+[108.218387] (-) TimerEvent: {}
+[108.319688] (-) TimerEvent: {}
+[108.420602] (-) TimerEvent: {}
+[108.521535] (-) TimerEvent: {}
+[108.622430] (-) TimerEvent: {}
+[108.723215] (-) TimerEvent: {}
+[108.824023] (-) TimerEvent: {}
+[108.924944] (-) TimerEvent: {}
+[109.025748] (-) TimerEvent: {}
+[109.126610] (-) TimerEvent: {}
+[109.227699] (-) TimerEvent: {}
+[109.328732] (-) TimerEvent: {}
+[109.429819] (-) TimerEvent: {}
+[109.530864] (-) TimerEvent: {}
+[109.631640] (-) TimerEvent: {}
+[109.732501] (-) TimerEvent: {}
+[109.833435] (-) TimerEvent: {}
+[109.934327] (-) TimerEvent: {}
+[110.035194] (-) TimerEvent: {}
+[110.135968] (-) TimerEvent: {}
+[110.236714] (-) TimerEvent: {}
+[110.337382] (-) TimerEvent: {}
+[110.438284] (-) TimerEvent: {}
+[110.539516] (-) TimerEvent: {}
+[110.640303] (-) TimerEvent: {}
+[110.741140] (-) TimerEvent: {}
+[110.841884] (-) TimerEvent: {}
+[110.942649] (-) TimerEvent: {}
+[111.043393] (-) TimerEvent: {}
+[111.144146] (-) TimerEvent: {}
+[111.245080] (-) TimerEvent: {}
+[111.345906] (-) TimerEvent: {}
+[111.446642] (-) TimerEvent: {}
+[111.547364] (-) TimerEvent: {}
+[111.648425] (-) TimerEvent: {}
+[111.749554] (-) TimerEvent: {}
+[111.850160] (-) TimerEvent: {}
+[111.950831] (-) TimerEvent: {}
+[112.051447] (-) TimerEvent: {}
+[112.152050] (-) TimerEvent: {}
+[112.252676] (-) TimerEvent: {}
+[112.353346] (-) TimerEvent: {}
+[112.453952] (-) TimerEvent: {}
+[112.554643] (-) TimerEvent: {}
+[112.655300] (-) TimerEvent: {}
+[112.756255] (-) TimerEvent: {}
+[112.857126] (-) TimerEvent: {}
+[112.957858] (-) TimerEvent: {}
+[113.058454] (-) TimerEvent: {}
+[113.159098] (-) TimerEvent: {}
+[113.259943] (-) TimerEvent: {}
+[113.360793] (-) TimerEvent: {}
+[113.461426] (-) TimerEvent: {}
+[113.562079] (-) TimerEvent: {}
+[113.662716] (-) TimerEvent: {}
+[113.763509] (-) TimerEvent: {}
+[113.864259] (-) TimerEvent: {}
+[113.964968] (-) TimerEvent: {}
+[114.065770] (-) TimerEvent: {}
+[114.166635] (-) TimerEvent: {}
+[114.267281] (-) TimerEvent: {}
+[114.368057] (-) TimerEvent: {}
+[114.468737] (-) TimerEvent: {}
+[114.569393] (-) TimerEvent: {}
+[114.670069] (-) TimerEvent: {}
+[114.770833] (-) TimerEvent: {}
+[114.871643] (-) TimerEvent: {}
+[114.972514] (-) TimerEvent: {}
+[115.073315] (-) TimerEvent: {}
+[115.174041] (-) TimerEvent: {}
+[115.274725] (-) TimerEvent: {}
+[115.375345] (-) TimerEvent: {}
+[115.475997] (-) TimerEvent: {}
+[115.576733] (-) TimerEvent: {}
+[115.677472] (-) TimerEvent: {}
+[115.778144] (-) TimerEvent: {}
+[115.878821] (-) TimerEvent: {}
+[115.979480] (-) TimerEvent: {}
+[116.080126] (-) TimerEvent: {}
+[116.180743] (-) TimerEvent: {}
+[116.281508] (-) TimerEvent: {}
+[116.382130] (-) TimerEvent: {}
+[116.479379] (very_simple_robot_simulator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable kinect_simulator\x1b[0m\n'}
+[116.482364] (-) TimerEvent: {}
+[116.582959] (-) TimerEvent: {}
+[116.683785] (-) TimerEvent: {}
+[116.784959] (-) TimerEvent: {}
+[116.885627] (-) TimerEvent: {}
+[116.986321] (-) TimerEvent: {}
+[117.087382] (-) TimerEvent: {}
+[117.188061] (-) TimerEvent: {}
+[117.288835] (-) TimerEvent: {}
+[117.389765] (-) TimerEvent: {}
+[117.490579] (-) TimerEvent: {}
+[117.591636] (-) TimerEvent: {}
+[117.692373] (-) TimerEvent: {}
+[117.793045] (-) TimerEvent: {}
+[117.893800] (-) TimerEvent: {}
+[117.994614] (-) TimerEvent: {}
+[118.095319] (-) TimerEvent: {}
+[118.195960] (-) TimerEvent: {}
+[118.296662] (-) TimerEvent: {}
+[118.397410] (-) TimerEvent: {}
+[118.498140] (-) TimerEvent: {}
+[118.598926] (-) TimerEvent: {}
+[118.699772] (-) TimerEvent: {}
+[118.800647] (-) TimerEvent: {}
+[118.901369] (-) TimerEvent: {}
+[119.002021] (-) TimerEvent: {}
+[119.102683] (-) TimerEvent: {}
+[119.203380] (-) TimerEvent: {}
+[119.304184] (-) TimerEvent: {}
+[119.404836] (-) TimerEvent: {}
+[119.505380] (-) TimerEvent: {}
+[119.573217] (very_simple_robot_simulator) StdoutLine: {'line': b'[100%] Built target kinect_simulator\n'}
+[119.593902] (very_simple_robot_simulator) CommandEnded: {'returncode': 0}
+[119.605644] (-) TimerEvent: {}
+[119.656040] (very_simple_robot_simulator) JobProgress: {'identifier': 'very_simple_robot_simulator', 'progress': 'install'}
+[119.658311] (very_simple_robot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fbr/Lab2/build/very_simple_robot_simulator'], 'cwd': '/home/fbr/Lab2/build/very_simple_robot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/Lab2/install:/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/338_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/very_simple_robot_simulator'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[119.674097] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[119.675636] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/kinect_simulator\n'}
+[119.686344] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Set runtime path of "/home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/kinect_simulator" to ""\n'}
+[119.687263] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/pythonpath.sh\n'}
+[119.687778] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/pythonpath.dsv\n'}
+[119.688429] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator-0.0.0-py3.10.egg-info\n'}
+[119.689479] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[119.690498] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[119.690773] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[119.690919] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[119.691372] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator\n'}
+[119.691851] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator/__init__.py\n'}
+[119.705878] (-) TimerEvent: {}
+[119.779806] (very_simple_robot_simulator) StdoutLine: {'line': b"Listing '/home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator'...\n"}
+[119.780452] (very_simple_robot_simulator) StdoutLine: {'line': b"Compiling '/home/fbr/Lab2/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages/very_simple_robot_simulator/__init__.py'...\n"}
+[119.790686] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/kinect_simulator.py\n'}
+[119.791696] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/kobuki_simulator.py\n'}
+[119.792485] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/lidar_simulator.py\n'}
+[119.792939] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/rangefinder.py\n'}
+[119.793504] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/utils.py\n'}
+[119.794075] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/lib/very_simple_robot_simulator/world_state_gui.py\n'}
+[119.794374] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch\n'}
+[119.794873] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/minimal_simulator_py.xml\n'}
+[119.795700] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/openni_simulator_py.xml\n'}
+[119.796053] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/lidar_simulator.xml\n'}
+[119.796673] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/minimal_simulator.xml\n'}
+[119.797601] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/world_state.xml\n'}
+[119.798439] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/run_all.xml\n'}
+[119.800180] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator//launch/openni_simulator.xml\n'}
+[119.802020] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/ament_index/resource_index/package_run_dependencies/very_simple_robot_simulator\n'}
+[119.803146] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/ament_index/resource_index/parent_prefix_path/very_simple_robot_simulator\n'}
+[119.803735] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/ament_prefix_path.sh\n'}
+[119.804418] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/ament_prefix_path.dsv\n'}
+[119.805266] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/path.sh\n'}
+[119.805618] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/environment/path.dsv\n'}
+[119.806008] (-) TimerEvent: {}
+[119.806850] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/local_setup.bash\n'}
+[119.807896] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/local_setup.sh\n'}
+[119.808441] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/local_setup.zsh\n'}
+[119.808673] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/local_setup.dsv\n'}
+[119.808918] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.dsv\n'}
+[119.809499] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/ament_index/resource_index/packages/very_simple_robot_simulator\n'}
+[119.810073] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/cmake/very_simple_robot_simulatorConfig.cmake\n'}
+[119.810509] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/cmake/very_simple_robot_simulatorConfig-version.cmake\n'}
+[119.811259] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Installing: /home/fbr/Lab2/install/very_simple_robot_simulator/share/very_simple_robot_simulator/package.xml\n'}
+[119.817200] (very_simple_robot_simulator) CommandEnded: {'returncode': 0}
+[119.906655] (-) TimerEvent: {}
+[119.911097] (very_simple_robot_simulator) JobEnded: {'identifier': 'very_simple_robot_simulator', 'rc': 0}
+[119.915599] (-) EventReactorShutdown: {}
