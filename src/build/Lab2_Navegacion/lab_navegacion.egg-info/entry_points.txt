@@ -1,0 +1,3 @@
+[console_scripts]
+dead_reckoning = Lab2_Navegacion.ros2_dead_reckoning:main
+

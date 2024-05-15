@@ -1,0 +1,21 @@
+[1.856s] Invoking command in '/home/fbr/Lab2/build/lab_navegation': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/fbr/Lab2/build/lab_navegation/build --no-deps symlink_data --force
+[3.147s] running develop
+[3.148s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.148s]   warnings.warn(
+[3.984s] running egg_info
+[3.985s] writing lab_navegation.egg-info/PKG-INFO
+[3.986s] writing dependency_links to lab_navegation.egg-info/dependency_links.txt
+[3.987s] writing entry points to lab_navegation.egg-info/entry_points.txt
+[3.988s] writing requirements to lab_navegation.egg-info/requires.txt
+[3.988s] writing top-level names to lab_navegation.egg-info/top_level.txt
+[3.995s] reading manifest file 'lab_navegation.egg-info/SOURCES.txt'
+[3.998s] writing manifest file 'lab_navegation.egg-info/SOURCES.txt'
+[4.006s] running build_ext
+[4.007s] Creating /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab-navegation.egg-link (link to .)
+[4.011s] Installing dead_reckoning script to /home/fbr/Lab2/install/lab_navegation/lib/lab_navegation
+[4.013s] 
+[4.013s] Installed /home/fbr/Lab2/build/lab_navegation
+[4.014s] running symlink_data
+[4.015s] symbolically linking /home/fbr/Lab2/build/lab_navegation/resource/lab_navegation -> /home/fbr/Lab2/install/lab_navegation/share/ament_index/resource_index/packages
+[4.015s] symbolically linking /home/fbr/Lab2/build/lab_navegation/package.xml -> /home/fbr/Lab2/install/lab_navegation/share/lab_navegation
+[4.128s] Invoked command in '/home/fbr/Lab2/build/lab_navegation' returned '0': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/fbr/Lab2/build/lab_navegation/build --no-deps symlink_data --force

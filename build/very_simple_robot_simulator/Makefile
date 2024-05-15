@@ -211,17 +211,17 @@ kinect_simulator/fast:
 .PHONY : kinect_simulator/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_very_simple_robot_simulator
+# Target rules for targets named ament_cmake_python_symlink_very_simple_robot_simulator
 
 # Build rule for target.
-ament_cmake_python_copy_very_simple_robot_simulator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_very_simple_robot_simulator
-.PHONY : ament_cmake_python_copy_very_simple_robot_simulator
+ament_cmake_python_symlink_very_simple_robot_simulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_very_simple_robot_simulator
+.PHONY : ament_cmake_python_symlink_very_simple_robot_simulator
 
 # fast build rule for target.
-ament_cmake_python_copy_very_simple_robot_simulator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_very_simple_robot_simulator.dir/build.make CMakeFiles/ament_cmake_python_copy_very_simple_robot_simulator.dir/build
-.PHONY : ament_cmake_python_copy_very_simple_robot_simulator/fast
+ament_cmake_python_symlink_very_simple_robot_simulator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/build.make CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/build
+.PHONY : ament_cmake_python_symlink_very_simple_robot_simulator/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_very_simple_robot_simulator_egg
@@ -322,7 +322,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_very_simple_robot_simulator_egg"
-	@echo "... ament_cmake_python_copy_very_simple_robot_simulator"
+	@echo "... ament_cmake_python_symlink_very_simple_robot_simulator"
 	@echo "... uninstall"
 	@echo "... very_simple_robot_simulator_uninstall"
 	@echo "... kinect_simulator"

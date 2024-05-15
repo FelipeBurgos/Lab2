@@ -1,0 +1,30 @@
+[0.066s] Invoking command in '/home/fbr/Lab2/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/fbr/Lab2/build/cmd_vel_mux -- -j4 -l4
+[0.979s] [ 75%] Built target cmd_vel_mux_node
+[0.980s] [100%] Built target cmd_vel_mux
+[1.005s] Invoked command in '/home/fbr/Lab2/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/fbr/Lab2/build/cmd_vel_mux -- -j4 -l4
+[1.103s] Invoking command in '/home/fbr/Lab2/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/fbr/Lab2/build/cmd_vel_mux
+[1.128s] -- Install configuration: ""
+[1.130s] -- Execute custom install script
+[1.134s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+[1.137s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+[1.138s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+[1.139s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+[1.143s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+[1.143s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+[1.144s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+[1.145s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+[1.146s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+[1.146s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+[1.150s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+[1.151s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+[1.152s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+[1.152s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+[1.153s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+[1.154s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+[1.155s] -- Symlinking: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+[1.185s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+[1.185s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+[1.189s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+[1.193s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+[1.193s] -- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.xml
+[1.196s] Invoked command in '/home/fbr/Lab2/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/fbr/Lab2/build/cmd_vel_mux

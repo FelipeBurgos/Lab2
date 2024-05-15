@@ -1,0 +1,374 @@
+[0.000000] (-) TimerEvent: {}
+[0.000393] (cmd_vel_mux) JobQueued: {'identifier': 'cmd_vel_mux', 'dependencies': OrderedDict()}
+[0.000593] (lab_navegation) JobQueued: {'identifier': 'lab_navegation', 'dependencies': OrderedDict()}
+[0.000699] (very_simple_robot_simulator) JobQueued: {'identifier': 'very_simple_robot_simulator', 'dependencies': OrderedDict()}
+[0.000841] (cmd_vel_mux) JobStarted: {'identifier': 'cmd_vel_mux'}
+[0.013128] (lab_navegation) JobStarted: {'identifier': 'lab_navegation'}
+[0.028666] (very_simple_robot_simulator) JobStarted: {'identifier': 'very_simple_robot_simulator'}
+[0.045388] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'cmake'}
+[0.049712] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '/home/fbr/Lab2/src/cmd_vel_mux', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/fbr/Lab2/install/cmd_vel_mux'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/12400_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.097610] (-) TimerEvent: {}
+[0.198244] (-) TimerEvent: {}
+[0.298860] (-) TimerEvent: {}
+[0.399620] (-) TimerEvent: {}
+[0.500538] (-) TimerEvent: {}
+[0.601569] (-) TimerEvent: {}
+[0.702631] (-) TimerEvent: {}
+[0.782749] (cmd_vel_mux) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.785157] (cmd_vel_mux) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.787070] (cmd_vel_mux) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.787756] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.788331] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.789523] (very_simple_robot_simulator) JobProgress: {'identifier': 'very_simple_robot_simulator', 'progress': 'cmake'}
+[0.790662] (very_simple_robot_simulator) Command: {'cmd': ['/usr/bin/cmake', '/home/fbr/Lab2/src/very_simple_robot_simulator', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/fbr/Lab2/install/very_simple_robot_simulator'], 'cwd': '/home/fbr/Lab2/build/very_simple_robot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/12400_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/very_simple_robot_simulator'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.800706] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.802879] (-) TimerEvent: {}
+[0.822307] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.838078] (cmd_vel_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.885716] (cmd_vel_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.903084] (-) TimerEvent: {}
+[1.003720] (-) TimerEvent: {}
+[1.104328] (-) TimerEvent: {}
+[1.163995] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.181279] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.204522] (-) TimerEvent: {}
+[1.305167] (-) TimerEvent: {}
+[1.315537] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/share/rcl_interfaces/cmake)\n'}
+[1.405373] (-) TimerEvent: {}
+[1.441356] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.505561] (-) TimerEvent: {}
+[1.518115] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.523284] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.602932] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.605725] (-) TimerEvent: {}
+[1.612963] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.629481] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.673813] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.706034] (-) TimerEvent: {}
+[1.743663] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.806150] (-) TimerEvent: {}
+[1.906833] (-) TimerEvent: {}
+[1.915598] (lab_navegation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/fbr/Lab2/build/lab_navegation/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/fbr/Lab2/build/lab_navegation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fbr', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/fbr', 'OLDPWD': '/home/fbr/Lab2/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'fbr', 'NAME': 'LAPTOP-KDA5M4HC', 'WSL_INTEROP': '/run/WSL/12400_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/fbr/Lab2/build/lab_navegation', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux', 'WSLENV': ''}, 'shell': False}
+[2.007025] (-) TimerEvent: {}
+[2.018294] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.023258] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.107225] (-) TimerEvent: {}
+[2.207885] (-) TimerEvent: {}
+[2.308570] (-) TimerEvent: {}
+[2.409467] (-) TimerEvent: {}
+[2.510230] (-) TimerEvent: {}
+[2.611097] (-) TimerEvent: {}
+[2.712150] (-) TimerEvent: {}
+[2.812791] (-) TimerEvent: {}
+[2.913602] (-) TimerEvent: {}
+[3.014621] (-) TimerEvent: {}
+[3.115372] (-) TimerEvent: {}
+[3.180510] (lab_navegation) StdoutLine: {'line': b'running develop\n'}
+[3.181558] (lab_navegation) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.182118] (lab_navegation) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.215580] (-) TimerEvent: {}
+[3.316372] (-) TimerEvent: {}
+[3.417149] (-) TimerEvent: {}
+[3.517999] (-) TimerEvent: {}
+[3.618785] (-) TimerEvent: {}
+[3.719678] (-) TimerEvent: {}
+[3.820472] (-) TimerEvent: {}
+[3.921593] (-) TimerEvent: {}
+[3.998838] (lab_navegation) StdoutLine: {'line': b'running egg_info\n'}
+[3.999750] (lab_navegation) StdoutLine: {'line': b'writing lab_navegation.egg-info/PKG-INFO\n'}
+[4.000681] (lab_navegation) StdoutLine: {'line': b'writing dependency_links to lab_navegation.egg-info/dependency_links.txt\n'}
+[4.001432] (lab_navegation) StdoutLine: {'line': b'writing entry points to lab_navegation.egg-info/entry_points.txt\n'}
+[4.002483] (lab_navegation) StdoutLine: {'line': b'writing requirements to lab_navegation.egg-info/requires.txt\n'}
+[4.003543] (lab_navegation) StdoutLine: {'line': b'writing top-level names to lab_navegation.egg-info/top_level.txt\n'}
+[4.009867] (lab_navegation) StdoutLine: {'line': b"reading manifest file 'lab_navegation.egg-info/SOURCES.txt'\n"}
+[4.013275] (lab_navegation) StdoutLine: {'line': b"writing manifest file 'lab_navegation.egg-info/SOURCES.txt'\n"}
+[4.018682] (lab_navegation) StdoutLine: {'line': b'running build_ext\n'}
+[4.021809] (-) TimerEvent: {}
+[4.022693] (lab_navegation) StdoutLine: {'line': b'Creating /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab-navegation.egg-link (link to .)\n'}
+[4.023548] (lab_navegation) StdoutLine: {'line': b'Installing dead_reckoning script to /home/fbr/Lab2/install/lab_navegation/lib/lab_navegation\n'}
+[4.024378] (lab_navegation) StdoutLine: {'line': b'\n'}
+[4.024937] (lab_navegation) StdoutLine: {'line': b'Installed /home/fbr/Lab2/build/lab_navegation\n'}
+[4.025809] (lab_navegation) StdoutLine: {'line': b'running symlink_data\n'}
+[4.026903] (lab_navegation) StdoutLine: {'line': b'symbolically linking /home/fbr/Lab2/build/lab_navegation/resource/lab_navegation -> /home/fbr/Lab2/install/lab_navegation/share/ament_index/resource_index/packages\n'}
+[4.027355] (lab_navegation) StdoutLine: {'line': b'symbolically linking /home/fbr/Lab2/build/lab_navegation/package.xml -> /home/fbr/Lab2/install/lab_navegation/share/lab_navegation\n'}
+[4.122040] (-) TimerEvent: {}
+[4.128027] (lab_navegation) CommandEnded: {'returncode': 0}
+[4.157760] (lab_navegation) JobEnded: {'identifier': 'lab_navegation', 'rc': 0}
+[4.222262] (-) TimerEvent: {}
+[4.322992] (-) TimerEvent: {}
+[4.423783] (-) TimerEvent: {}
+[4.524539] (-) TimerEvent: {}
+[4.626321] (-) TimerEvent: {}
+[4.727073] (-) TimerEvent: {}
+[4.827829] (-) TimerEvent: {}
+[4.928651] (-) TimerEvent: {}
+[5.029603] (-) TimerEvent: {}
+[5.130325] (-) TimerEvent: {}
+[5.231236] (-) TimerEvent: {}
+[5.332108] (-) TimerEvent: {}
+[5.432949] (-) TimerEvent: {}
+[5.533903] (-) TimerEvent: {}
+[5.634727] (-) TimerEvent: {}
+[5.735572] (-) TimerEvent: {}
+[5.836430] (-) TimerEvent: {}
+[5.937280] (-) TimerEvent: {}
+[6.038432] (-) TimerEvent: {}
+[6.139509] (-) TimerEvent: {}
+[6.240219] (-) TimerEvent: {}
+[6.340948] (-) TimerEvent: {}
+[6.441810] (-) TimerEvent: {}
+[6.542726] (-) TimerEvent: {}
+[6.643409] (-) TimerEvent: {}
+[6.744068] (-) TimerEvent: {}
+[6.844925] (-) TimerEvent: {}
+[6.945812] (-) TimerEvent: {}
+[7.046505] (-) TimerEvent: {}
+[7.147356] (-) TimerEvent: {}
+[7.248159] (-) TimerEvent: {}
+[7.348827] (-) TimerEvent: {}
+[7.449770] (-) TimerEvent: {}
+[7.550453] (-) TimerEvent: {}
+[7.651322] (-) TimerEvent: {}
+[7.752152] (-) TimerEvent: {}
+[7.852927] (-) TimerEvent: {}
+[7.953861] (-) TimerEvent: {}
+[8.054431] (-) TimerEvent: {}
+[8.155139] (-) TimerEvent: {}
+[8.255801] (-) TimerEvent: {}
+[8.356461] (-) TimerEvent: {}
+[8.457122] (-) TimerEvent: {}
+[8.557878] (-) TimerEvent: {}
+[8.658614] (-) TimerEvent: {}
+[8.759260] (-) TimerEvent: {}
+[8.859868] (-) TimerEvent: {}
+[8.960383] (-) TimerEvent: {}
+[9.060996] (-) TimerEvent: {}
+[9.161820] (-) TimerEvent: {}
+[9.262551] (-) TimerEvent: {}
+[9.363489] (-) TimerEvent: {}
+[9.464237] (-) TimerEvent: {}
+[9.565353] (-) TimerEvent: {}
+[9.666626] (-) TimerEvent: {}
+[9.767471] (-) TimerEvent: {}
+[9.868323] (-) TimerEvent: {}
+[9.969219] (-) TimerEvent: {}
+[10.070236] (-) TimerEvent: {}
+[10.171164] (-) TimerEvent: {}
+[10.271961] (-) TimerEvent: {}
+[10.372779] (-) TimerEvent: {}
+[10.473805] (-) TimerEvent: {}
+[10.574739] (-) TimerEvent: {}
+[10.675604] (-) TimerEvent: {}
+[10.776341] (-) TimerEvent: {}
+[10.877175] (-) TimerEvent: {}
+[10.977985] (-) TimerEvent: {}
+[11.078770] (-) TimerEvent: {}
+[11.179809] (-) TimerEvent: {}
+[11.281032] (-) TimerEvent: {}
+[11.382437] (-) TimerEvent: {}
+[11.483349] (-) TimerEvent: {}
+[11.584312] (-) TimerEvent: {}
+[11.685444] (-) TimerEvent: {}
+[11.786764] (-) TimerEvent: {}
+[11.887633] (-) TimerEvent: {}
+[11.988442] (-) TimerEvent: {}
+[12.089644] (-) TimerEvent: {}
+[12.190452] (-) TimerEvent: {}
+[12.291401] (-) TimerEvent: {}
+[12.392177] (-) TimerEvent: {}
+[12.493071] (-) TimerEvent: {}
+[12.593939] (-) TimerEvent: {}
+[12.695111] (-) TimerEvent: {}
+[12.795944] (-) TimerEvent: {}
+[12.896929] (-) TimerEvent: {}
+[12.997835] (-) TimerEvent: {}
+[13.098614] (-) TimerEvent: {}
+[13.199749] (-) TimerEvent: {}
+[13.300731] (-) TimerEvent: {}
+[13.401565] (-) TimerEvent: {}
+[13.502410] (-) TimerEvent: {}
+[13.603112] (-) TimerEvent: {}
+[13.704088] (-) TimerEvent: {}
+[13.805027] (-) TimerEvent: {}
+[13.905849] (-) TimerEvent: {}
+[14.006634] (-) TimerEvent: {}
+[14.107401] (-) TimerEvent: {}
+[14.208225] (-) TimerEvent: {}
+[14.309276] (-) TimerEvent: {}
+[14.409967] (-) TimerEvent: {}
+[14.510672] (-) TimerEvent: {}
+[14.611462] (-) TimerEvent: {}
+[14.712405] (-) TimerEvent: {}
+[14.813377] (-) TimerEvent: {}
+[14.914264] (-) TimerEvent: {}
+[15.015279] (-) TimerEvent: {}
+[15.116034] (-) TimerEvent: {}
+[15.216815] (-) TimerEvent: {}
+[15.317688] (-) TimerEvent: {}
+[15.418533] (-) TimerEvent: {}
+[15.519552] (-) TimerEvent: {}
+[15.620736] (-) TimerEvent: {}
+[15.721731] (-) TimerEvent: {}
+[15.823011] (-) TimerEvent: {}
+[15.886937] (cmd_vel_mux) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[15.923195] (-) TimerEvent: {}
+[16.023929] (-) TimerEvent: {}
+[16.124764] (-) TimerEvent: {}
+[16.225687] (-) TimerEvent: {}
+[16.326503] (-) TimerEvent: {}
+[16.427321] (-) TimerEvent: {}
+[16.513491] (cmd_vel_mux) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[16.527557] (-) TimerEvent: {}
+[16.628296] (-) TimerEvent: {}
+[16.729058] (-) TimerEvent: {}
+[16.802678] (cmd_vel_mux) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[16.829286] (-) TimerEvent: {}
+[16.930062] (-) TimerEvent: {}
+[17.019271] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.030333] (-) TimerEvent: {}
+[17.056943] (cmd_vel_mux) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.5 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[17.058517] (cmd_vel_mux) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[17.130630] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[17.131079] (-) TimerEvent: {}
+[17.131468] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[17.131947] (cmd_vel_mux) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[17.161351] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[17.162516] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fbr/Lab2/src/cmd_vel_mux/include\n'}
+[17.162937] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[17.171413] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[17.171897] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[17.173428] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[17.176395] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.178427] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[17.191135] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[17.191785] (cmd_vel_mux) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[17.192124] (cmd_vel_mux) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.193733] (cmd_vel_mux) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.230331] (cmd_vel_mux) StdoutLine: {'line': b'-- Generating done\n'}
+[17.231085] (-) TimerEvent: {}
+[17.234807] (cmd_vel_mux) StdoutLine: {'line': b'-- Build files have been written to: /home/fbr/Lab2/build/cmd_vel_mux\n'}
+[17.268837] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[17.270864] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'build'}
+[17.273804] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fbr/Lab2/build/cmd_vel_mux', '--', '-j4', '-l4'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/12400_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[17.331391] (-) TimerEvent: {}
+[17.372593] (cmd_vel_mux) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cmd_vel_mux\x1b[0m\n'}
+[17.373550] (cmd_vel_mux) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cmd_vel_mux_node\x1b[0m\n'}
+[17.422783] (cmd_vel_mux) StdoutLine: {'line': b'[100%] Built target cmd_vel_mux\n'}
+[17.423272] (cmd_vel_mux) StdoutLine: {'line': b'[100%] Built target cmd_vel_mux_node\n'}
+[17.431606] (-) TimerEvent: {}
+[17.448577] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[17.526530] (cmd_vel_mux) JobProgress: {'identifier': 'cmd_vel_mux', 'progress': 'install'}
+[17.531863] (-) TimerEvent: {}
+[17.546836] (cmd_vel_mux) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fbr/Lab2/build/cmd_vel_mux'], 'cwd': '/home/fbr/Lab2/build/cmd_vel_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/12400_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/cmd_vel_mux'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[17.564745] (cmd_vel_mux) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.566520] (cmd_vel_mux) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.567897] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node\n'}
+[17.568908] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/lib/libcmd_vel_mux.so\n'}
+[17.570607] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp\n'}
+[17.571672] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml\n'}
+[17.572784] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py\n'}
+[17.573377] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py\n'}
+[17.573988] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux\n'}
+[17.574807] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux\n'}
+[17.575575] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh\n'}
+[17.576551] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv\n'}
+[17.577038] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh\n'}
+[17.577665] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv\n'}
+[17.578545] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash\n'}
+[17.579506] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh\n'}
+[17.580037] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh\n'}
+[17.580659] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv\n'}
+[17.581268] (cmd_vel_mux) StdoutLine: {'line': b'-- Symlinking: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv\n'}
+[17.581661] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[17.582242] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[17.602564] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux\n'}
+[17.603095] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux\n'}
+[17.603925] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake\n'}
+[17.604443] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake\n'}
+[17.605060] (cmd_vel_mux) StdoutLine: {'line': b'-- Up-to-date symlink: /home/fbr/Lab2/install/cmd_vel_mux/share/cmd_vel_mux/package.xml\n'}
+[17.610323] (cmd_vel_mux) CommandEnded: {'returncode': 0}
+[17.632302] (-) TimerEvent: {}
+[17.733942] (-) TimerEvent: {}
+[17.735555] (cmd_vel_mux) JobEnded: {'identifier': 'cmd_vel_mux', 'rc': 0}
+[17.834145] (-) TimerEvent: {}
+[17.934785] (-) TimerEvent: {}
+[18.035447] (-) TimerEvent: {}
+[18.136266] (-) TimerEvent: {}
+[18.236996] (-) TimerEvent: {}
+[18.337816] (-) TimerEvent: {}
+[18.438783] (-) TimerEvent: {}
+[18.539516] (-) TimerEvent: {}
+[18.640241] (-) TimerEvent: {}
+[18.740941] (-) TimerEvent: {}
+[18.841639] (-) TimerEvent: {}
+[18.942726] (-) TimerEvent: {}
+[19.043513] (-) TimerEvent: {}
+[19.144303] (-) TimerEvent: {}
+[19.245050] (-) TimerEvent: {}
+[19.345709] (-) TimerEvent: {}
+[19.446377] (-) TimerEvent: {}
+[19.546989] (-) TimerEvent: {}
+[19.647637] (-) TimerEvent: {}
+[19.748663] (-) TimerEvent: {}
+[19.849554] (-) TimerEvent: {}
+[19.950298] (-) TimerEvent: {}
+[20.050936] (-) TimerEvent: {}
+[20.151709] (-) TimerEvent: {}
+[20.252402] (-) TimerEvent: {}
+[20.353128] (-) TimerEvent: {}
+[20.454034] (-) TimerEvent: {}
+[20.554999] (-) TimerEvent: {}
+[20.655614] (-) TimerEvent: {}
+[20.756432] (-) TimerEvent: {}
+[20.857226] (-) TimerEvent: {}
+[20.958137] (-) TimerEvent: {}
+[21.059076] (-) TimerEvent: {}
+[21.095610] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[21.159355] (-) TimerEvent: {}
+[21.259996] (-) TimerEvent: {}
+[21.317330] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[21.347269] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[21.359757] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[21.360314] (-) TimerEvent: {}
+[21.364523] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[21.460544] (-) TimerEvent: {}
+[21.561256] (-) TimerEvent: {}
+[21.661881] (-) TimerEvent: {}
+[21.762816] (-) TimerEvent: {}
+[21.863532] (-) TimerEvent: {}
+[21.963997] (-) TimerEvent: {}
+[22.064569] (-) TimerEvent: {}
+[22.165163] (-) TimerEvent: {}
+[22.230178] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[22.265346] (-) TimerEvent: {}
+[22.365880] (-) TimerEvent: {}
+[22.409814] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[22.466116] (-) TimerEvent: {}
+[22.555473] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[22.557125] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fbr/Lab2/src/very_simple_robot_simulator/include/very_simple_robot_simulator\n'}
+[22.557365] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[22.558770] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[22.560970] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[22.562502] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[22.566291] (-) TimerEvent: {}
+[22.568895] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[22.569293] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[22.570557] (very_simple_robot_simulator) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[22.572878] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.606360] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Generating done\n'}
+[22.611916] (very_simple_robot_simulator) StdoutLine: {'line': b'-- Build files have been written to: /home/fbr/Lab2/build/very_simple_robot_simulator\n'}
+[22.627873] (very_simple_robot_simulator) CommandEnded: {'returncode': 0}
+[22.629353] (very_simple_robot_simulator) JobProgress: {'identifier': 'very_simple_robot_simulator', 'progress': 'build'}
+[22.631174] (very_simple_robot_simulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fbr/Lab2/build/very_simple_robot_simulator', '--', '-j4', '-l4'], 'cwd': '/home/fbr/Lab2/build/very_simple_robot_simulator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fbr'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fbr/work1_ws/install/cmd_vel_mux/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fbr'), ('OLDPWD', '/home/fbr/Lab2/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/fbr/work1_ws/install:/home/fbr/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fbr'), ('NAME', 'LAPTOP-KDA5M4HC'), ('WSL_INTEROP', '/run/WSL/12400_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu22.04LTS_2204.3.63.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Felipe/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Felipe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Felipe/AppData/Roaming/CoolProp:/mnt/c/Users/Felipe/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/laboratorio:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fbr/Lab2/build/very_simple_robot_simulator'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator/local/lib/python3.10/dist-packages:/home/fbr/work1_ws/install/laboratorio/lib/python3.10/site-packages:/home/fbr/ros2_ws/build/my_first_package:/home/fbr/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/fbr/work1_ws/install/very_simple_robot_simulator:/home/fbr/work1_ws/install/cmd_vel_mux:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[22.666789] (-) TimerEvent: {}
+[22.703506] (very_simple_robot_simulator) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target kinect_simulator\x1b[0m\n'}
+[22.713301] (very_simple_robot_simulator) StderrLine: {'line': b"failed to create symbolic link '/home/fbr/Lab2/build/very_simple_robot_simulator/ament_cmake_python/very_simple_robot_simulator/very_simple_robot_simulator' because existing path cannot be removed: Is a directory\n"}
+[22.714874] (very_simple_robot_simulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator] Error 1\n'}
+[22.715372] (very_simple_robot_simulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/all] Error 2\n'}
+[22.715521] (very_simple_robot_simulator) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[22.744003] (very_simple_robot_simulator) StdoutLine: {'line': b'[100%] Built target kinect_simulator\n'}
+[22.745858] (very_simple_robot_simulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[22.749346] (very_simple_robot_simulator) CommandEnded: {'returncode': 2}
+[22.767006] (-) TimerEvent: {}
+[22.818147] (very_simple_robot_simulator) JobEnded: {'identifier': 'very_simple_robot_simulator', 'rc': 2}
+[22.823481] (-) EventReactorShutdown: {}

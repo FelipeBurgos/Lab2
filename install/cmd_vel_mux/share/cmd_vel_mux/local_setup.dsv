@@ -1,2 +1,1 @@
-source;share/cmd_vel_mux/environment/ament_prefix_path.sh
-source;share/cmd_vel_mux/environment/path.sh
+/home/fbr/Lab2/build/cmd_vel_mux/ament_cmake_environment_hooks/local_setup.dsv

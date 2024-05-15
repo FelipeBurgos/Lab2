@@ -1,0 +1,38 @@
+[2.539s] Invoking command in '/home/fbr/Lab2/build/lab_navegation': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/fbr/Lab2/build/lab_navegation/build
+[3.844s] running develop
+[3.849s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.849s]   warnings.warn(
+[4.639s] Removing /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab-navegation.egg-link (link to .)
+[4.745s] Invoked command in '/home/fbr/Lab2/build/lab_navegation' returned '0': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/fbr/Lab2/build/lab_navegation/build
+[4.753s] Invoking command in '/home/fbr/Lab2/src/lab_navegation': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab_navegation build --build-base /home/fbr/Lab2/build/lab_navegation/build install --record /home/fbr/Lab2/build/lab_navegation/install.log --single-version-externally-managed install_data --force
+[6.094s] running egg_info
+[6.098s] writing ../../build/lab_navegation/lab_navegation.egg-info/PKG-INFO
+[6.099s] writing dependency_links to ../../build/lab_navegation/lab_navegation.egg-info/dependency_links.txt
+[6.102s] writing entry points to ../../build/lab_navegation/lab_navegation.egg-info/entry_points.txt
+[6.103s] writing requirements to ../../build/lab_navegation/lab_navegation.egg-info/requires.txt
+[6.105s] writing top-level names to ../../build/lab_navegation/lab_navegation.egg-info/top_level.txt
+[6.113s] reading manifest file '../../build/lab_navegation/lab_navegation.egg-info/SOURCES.txt'
+[6.118s] writing manifest file '../../build/lab_navegation/lab_navegation.egg-info/SOURCES.txt'
+[6.118s] running build
+[6.118s] running build_py
+[6.121s] running install
+[6.123s] running install_lib
+[6.126s] creating /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation
+[6.128s] copying /home/fbr/Lab2/build/lab_navegation/build/lib/lab_navegation/ros2_pose_loader.py -> /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation
+[6.129s] copying /home/fbr/Lab2/build/lab_navegation/build/lib/lab_navegation/__init__.py -> /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation
+[6.130s] copying /home/fbr/Lab2/build/lab_navegation/build/lib/lab_navegation/Grafo.py -> /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation
+[6.131s] copying /home/fbr/Lab2/build/lab_navegation/build/lib/lab_navegation/ros2_dead_reckoning.py -> /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation
+[6.135s] byte-compiling /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_pose_loader.py to ros2_pose_loader.cpython-310.pyc
+[6.139s] byte-compiling /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__init__.py to __init__.cpython-310.pyc
+[6.141s] byte-compiling /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/Grafo.py to Grafo.cpython-310.pyc
+[6.144s] byte-compiling /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_dead_reckoning.py to ros2_dead_reckoning.cpython-310.pyc
+[6.149s] running install_data
+[6.151s] copying resource/lab_navegation -> /home/fbr/Lab2/install/lab_navegation/share/ament_index/resource_index/packages
+[6.153s] copying package.xml -> /home/fbr/Lab2/install/lab_navegation/share/lab_navegation
+[6.156s] running install_egg_info
+[6.166s] Copying ../../build/lab_navegation/lab_navegation.egg-info to /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation-0.0.0-py3.10.egg-info
+[6.176s] running install_scripts
+[6.264s] Installing dead_reckoning script to /home/fbr/Lab2/install/lab_navegation/lib/lab_navegation
+[6.266s] Installing pose_loader script to /home/fbr/Lab2/install/lab_navegation/lib/lab_navegation
+[6.269s] writing list of installed files to '/home/fbr/Lab2/build/lab_navegation/install.log'
+[6.362s] Invoked command in '/home/fbr/Lab2/src/lab_navegation' returned '0': PYTHONPATH=/home/fbr/Lab2/build/lab_navegation/prefix_override:/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab_navegation build --build-base /home/fbr/Lab2/build/lab_navegation/build install --record /home/fbr/Lab2/build/lab_navegation/install.log --single-version-externally-managed install_data --force
