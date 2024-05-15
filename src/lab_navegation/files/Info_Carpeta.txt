@@ -7,4 +7,15 @@ En este paquete van todos los scripts relacionados al control PI del Robot:
 mover_robot_a_destino -> descompone las poses que vienen en formato (x,y,theta) a desplazamientos en metros [(x,0), (0, theta), (y,0)]
 aplicar_velocidad -> la lista obtenida anteriormente sera la señal de referencia del controlador.
 
-Es el controlador quien publica ahora la velocidad que el robot debe tomar!!
+Es el controlador quien publica ahora la velocidad que el robot debe tomar!! Además, el periodo lo definen los mensajes de la odoemtria,
+por lo que no es necesario declarar un periodo (con time) dentro del script.
+
+La saturacion es un V_o = min(limite, V_ctrl).
+
+El nodo controlador recibe la referencia/set_point(pose) y la salida de la planta (odometry) y a la salida entrega la actuación (velocidad
+del robot). 
+
+Los controladores van a chocar porque poseen el mismo topico. Para ello le puede agregar un "_A" o "_B", pero Ros tiene la solución.
+"/linea/state", de esta manera generas una jerarquia y diferencias que que nodo le llega.
+Agreando en el launch un namespace='' para todos los topicos que levanta un nodo, diferenciandolos y no siendo necesario variar los nombres
+de topicos cuando dos nodos ocupan el mismo.
