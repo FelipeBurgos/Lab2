@@ -19,3 +19,32 @@ Los controladores van a chocar porque poseen el mismo topico. Para ello le puede
 "/linea/state", de esta manera generas una jerarquia y diferencias que que nodo le llega.
 Agreando en el launch un namespace='' para todos los topicos que levanta un nodo, diferenciandolos y no siendo necesario variar los nombres
 de topicos cuando dos nodos ocupan el mismo.
+
+
+Puede servirte:
+for speed_command in speed_command_list:
+      
+      # Definimos el tiempo inicial de la tupla y creamos un tiempo actual de iteración
+      time_initial = time.time()
+      time_end = 0
+
+      # Definimos el tiempo calculado en move_to_point para la tupla
+      timer_period = float(speed_command[2])
+
+      # Sentencio un while para enviar mensajes de forma iterativa hasta el tiempo solicitado
+      while time_end - time_initial <= timer_period: 
+        
+        # Defino el mensaje y agrego las velocidades
+        speed = Twist()
+        speed.linear.x = float(speed_command[0])
+        speed.angular.z = float(speed_command[1])
+      
+        # Publico en el tópico
+        self.publish_velocity.publish(speed)
+      
+        
+        # Seteo el periodo de cada mensaje, en este caso 10 Hz
+        time.sleep(0.1)
+
+        # Actualizo el tiempo actual de iteración
+        time_end = time.time()
