@@ -1,9 +1,13 @@
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_pose_loader.py
+/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_ki_linear.py
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__init__.py
+/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_ki_angular.py
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/Grafo.py
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/ros2_dead_reckoning.py
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/ros2_pose_loader.cpython-310.pyc
+/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/ros2_ki_linear.cpython-310.pyc
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/__init__.cpython-310.pyc
+/home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/ros2_ki_angular.cpython-310.pyc
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/Grafo.cpython-310.pyc
 /home/fbr/Lab2/install/lab_navegation/lib/python3.10/site-packages/lab_navegation/__pycache__/ros2_dead_reckoning.cpython-310.pyc
 /home/fbr/Lab2/install/lab_navegation/share/ament_index/resource_index/packages/lab_navegation

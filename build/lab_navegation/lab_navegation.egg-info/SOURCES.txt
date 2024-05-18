@@ -11,6 +11,8 @@ setup.py
 lab_navegation/Grafo.py
 lab_navegation/__init__.py
 lab_navegation/ros2_dead_reckoning.py
+lab_navegation/ros2_ki_angular.py
+lab_navegation/ros2_ki_linear.py
 lab_navegation/ros2_pose_loader.py
 launch/avanzar_y_rotar_ctrl.xml
 resource/lab_navegation

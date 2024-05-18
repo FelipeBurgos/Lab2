@@ -4,10 +4,8 @@ import rclpy
 from rclpy.node import Node
 
 from geometry_msgs.msg import PoseArray
-from geometry_msgs.msg import Twist
-from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
 from tf_transformations import euler_from_quaternion
-from math import radians
 
 
 
@@ -20,21 +18,15 @@ class DeadReckoningNav(Node):
         'goal_list',
         self.action_move_cb,
         10)
-    self.dist_set_point = self.create_publisher(Float64, 'P_ref', 10)
-  
+    self.dist_set_point = self.create_publisher(Float64MultiArray, 'setpoint', 10)
     
 
   def set_velocity(self, displacement_list:list):
+    # Envio por cada desplazamiento
     for displacement in displacement_list:
-      msg = Float64()
-
-      if displacement_list.index(displacement) % 2 == 0:
-        msg.data = displacement[0]
-        self.dist_set_point.publish(msg)
-      
-      else:
-        msg.data = radians(displacement[1])
-        self.dist_set_point.publish(msg)
+      msg = Float64MultiArray()
+      msg.data = list(map(float, displacement))
+      self.dist_set_point.publish(msg)
   
 
   def move_to_point(self, goal_pose:tuple):
@@ -47,12 +39,11 @@ class DeadReckoningNav(Node):
     displacement_list = [(x, 0), (0, theta), (y, 0)]
     self.set_velocity(displacement_list)
 
-    self.get_logger().info(f'Displacement list, {str(x)}, {str(y)}, {str(theta)})')
+    self.get_logger().info(f'Displacement list %f radians')
     self.get_logger().info('--------------------')
 
 
   def action_move_cb(self, msg:PoseArray):
-    
     self.get_logger().info('Recibido')
     # Iteracion para traducir Quaternion a Euler
     
