@@ -1,8 +1,0 @@
-[0.971s] Invoking command in '/home/fbr/Lab2/build/very_simple_robot_simulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/fbr/Lab2/build/very_simple_robot_simulator -- -j4 -l4
-[1.106s] failed to create symbolic link '/home/fbr/Lab2/build/very_simple_robot_simulator/ament_cmake_python/very_simple_robot_simulator/very_simple_robot_simulator' because existing path cannot be removed: Is a directory
-[1.109s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator] Error 1
-[1.110s] gmake[1]: *** [CMakeFiles/Makefile2:166: CMakeFiles/ament_cmake_python_symlink_very_simple_robot_simulator.dir/all] Error 2
-[1.110s] gmake[1]: *** Waiting for unfinished jobs....
-[1.163s] [100%] Built target kinect_simulator
-[1.163s] gmake: *** [Makefile:146: all] Error 2
-[1.224s] Invoked command in '/home/fbr/Lab2/build/very_simple_robot_simulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fbr/Lab2/install/lab_navegation:/home/fbr/Lab2/install/Lab2_Navegacion:/home/fbr/work1_ws/install/laboratorio:/home/fbr/ros2_ws/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/fbr/Lab2/build/very_simple_robot_simulator -- -j4 -l4
