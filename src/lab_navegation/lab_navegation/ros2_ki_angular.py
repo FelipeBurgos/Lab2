@@ -61,7 +61,7 @@ class KI_Angular(Node):
     self.acumulate_error += error
     dt = 0 if (self.final_time - self.initial_time) < 1e-6 else self.final_time - self.initial_time
 
-    #self.get_logger().info( 'Current pose - ang: (%f, %f, %f), error (%f)' % (yaw, _, __, error) )
+    self.get_logger().info( 'Current pose - ang: %f, error (%f)' % (yaw, error) )
 
     # Proporcional
     p_actuation = error * self.kp

@@ -117,7 +117,7 @@ class KI_Linear(Node):
 
 def main():
     rclpy.init()
-    ki_linear = KI_Linear(kp= 8, ki= 0.05)
+    ki_linear = KI_Linear(kp= 2.5, ki= 0.0)
     rclpy.spin(ki_linear)
 
 if __name__ == '__main__':

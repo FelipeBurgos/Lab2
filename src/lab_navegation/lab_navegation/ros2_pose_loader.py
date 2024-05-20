@@ -75,7 +75,7 @@ class PoseLoader(Node):
              yaw_radian = radians(yaw_degree)
 
             elif yaw_degree == 360:
-             yaw_radian = 0
+             yaw_radian = radians(yaw_degree - 180)
             
             else:
              yaw_radian = -radians(yaw_degree - 180)
