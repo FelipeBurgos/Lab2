@@ -23,7 +23,9 @@ setup(
     entry_points={
         'console_scripts': [
             'dead_reckoning = lab_navegation.ros2_dead_reckoning:main',
-            'pose_loader = lab_navegation.ros2_pose_loader:main'
+            'pose_loader = lab_navegation.ros2_pose_loader:main',
+            'ki_linear = lab_navegation.ros2_ki_linear:main',
+            'ki_angular = lab_navegation.ros2_ki_angular:main'
         ],
     },
 )
