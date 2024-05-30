@@ -64,17 +64,17 @@ class KI_Linear(Node):
                                                 odom.pose.pose.orientation.w ) )
     
     # Lógica de control
-    error = d - self.setpoint if -radians(180) <= yaw < 0  or radians(180) - 1e-3 <= yaw <= radians(180) + 1e-3 else self.setpoint - d
-    self.acumulate_error += error
+    error = d - self.setpoint if -radians(180) <= yaw < -0.001  or radians(180) - 1e-3 <= yaw <= radians(180) + 1e-3 else self.setpoint - d
     dt = 0 if (self.final_time - self.initial_time) < 1e-6 else self.final_time - self.initial_time
 
-    #self.get_logger().info( 'Current pose - lin: (%f, %f), error (%f)' % (x, y, error))
+    self.get_logger().info( 'Current pose - lin: (%f, %f), error (%f)' % (x, y, error))
 
     # Proporcional
     p_actuation = error * self.kp
 
     # Integrativo
     i_actuation = dt * self.acumulate_error * self.ki
+    self.acumulate_error += error
 
     # Derivativo
     #d_actuacion = self.kd * (error - self.acumulate_error)/dt
@@ -117,7 +117,7 @@ class KI_Linear(Node):
 
 def main():
     rclpy.init()
-    ki_linear = KI_Linear(kp= 2.5, ki= 0.0)
+    ki_linear = KI_Linear(kp= 1.5, ki= 1.2)
     rclpy.spin(ki_linear)
 
 if __name__ == '__main__':

@@ -3,13 +3,34 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+from math import radians
 
-def real_pose_info():
+def odometry_lab1_info():
     try:
         script_dir = os.path.dirname(os.path.realpath(__file__))
-        poses_path = os.path.join(script_dir, '..', 'files', 'real_pose.txt')
-        real_pose_data = np.loadtxt(poses_path)
-        return real_pose_data
+        poses_path = os.path.join(script_dir, '..', 'files', 'odometry_lab1.txt')
+        odometry_data = np.loadtxt(poses_path)
+        return odometry_data
+
+    except FileNotFoundError:
+        print(f"File not found: {poses_path}")
+
+def act_linear_info():
+    try:
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        poses_path = os.path.join(script_dir, '..', 'files', 'act_linear_KI.txt')
+        odometry_data = np.loadtxt(poses_path)
+        return odometry_data
+
+    except FileNotFoundError:
+        print(f"File not found: {poses_path}")
+
+def act_angular_info():
+    try:
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        poses_path = os.path.join(script_dir, '..', 'files', 'act_angular_KI.txt')
+        odometry_data = np.loadtxt(poses_path)
+        return odometry_data
 
     except FileNotFoundError:
         print(f"File not found: {poses_path}")
@@ -17,57 +38,80 @@ def real_pose_info():
 def odometry_info():
     try:
         script_dir = os.path.dirname(os.path.realpath(__file__))
-        poses_path = os.path.join(script_dir, '..', 'files', 'odometry.txt')
+        poses_path = os.path.join(script_dir, '..', 'files', 'odometry_KI.txt')
         odometry_data = np.loadtxt(poses_path)
         return odometry_data
 
     except FileNotFoundError:
         print(f"File not found: {poses_path}")
 
+def generar_ref_l(N, M, L, vueltas):
+    # Generar los arrays para cada número y repetirlos según las repeticiones
+    array_0 = np.zeros(N)
+    array_1 = np.ones(M)
+    array_2 = np.full(L, 2)
+    
+    # Concatenar los arrays en el orden adecuado
+    resultado = np.concatenate((array_1, array_2, array_1, array_0))
+    
+    # Repetir el resultado según las repeticiones especificadas
+    resultado_repetido = np.tile(resultado, vueltas)
+    
+    return resultado_repetido
 
-# Arrays de Real Pose
-x_real = real_pose_info()[:, 0]
-y_real = real_pose_info()[:, 1]
+def generar_ref_a(N, M, L, vueltas):
+    # Generar los arrays para cada número y repetirlos según las repeticiones
+    array_0 = np.zeros(N)
+    array_1 = np.full(M, radians(90))
+    array_2 = np.full(L, radians(180))
+    
+    # Concatenar los arrays en el orden adecuado
+    resultado = np.concatenate((array_1, array_2, array_1*-1, array_0))
+    
+    # Repetir el resultado según las repeticiones especificadas
+    resultado_repetido = np.tile(resultado, vueltas)
+    
+    return resultado_repetido
 
+# Arrays de Odometry lab1
+x_odom_lab1 = odometry_lab1_info()[:, 0]
+y_odom_lab1 = odometry_lab1_info()[:, 1]
 
-# Arrays de Odometry
+# Arrays de actuacion
+linear = np.concatenate((np.zeros(25), act_linear_info()[:]))
+angular = np.concatenate((np.zeros(25), act_angular_info()[:]))
+
+# Arrays de Odometry actual
 x_odom = odometry_info()[:, 0]
 y_odom = odometry_info()[:, 1]
+yaw_odom = odometry_info()[:, 2]
 
-# Grafica
+dist = (x_odom*x_odom)**0.5 + (y_odom*y_odom)**0.5
 
+
+# Tiempo de ejecucion
+t_odom = list(range(x_odom.shape[0]))
+t_angular = list(range(angular.shape[0]))
+t_linear = list(range(linear.shape[0]))
+
+# Posiciones de referencia
+inicio = np.zeros(750) #lineal P:50, angular P:320, lineal PI:40
+#p_ref =  np.concatenate((inicio, generar_ref_l(N=1370, M=1440, L=1364, vueltas=3))) #P:503
+#t_ref = np.arange(len(p_ref))
+p_ref = np.concatenate((inicio, generar_ref_a(N=1370, M=1440, L=1364, vueltas=3)))
+t_ref = np.arange(len(p_ref))
+
+
+# Grafico
 plt.figure(figsize=(8, 6))
-plt.plot(x_real, y_real, 'b-', label='Real Pose')
-plt.plot(x_odom, y_odom, 'r-', label='Odometry')
+
+# Para Ref, act y Real
+plt.plot(x_odom, y_odom, 'r-', label='Lab. 2')
+plt.plot(x_odom_lab1, y_odom_lab1, 'b-', label='Lab. 1')
+#plt.plot(t_ref, p_ref, 'r-', label='Pref(t)')
 plt.xlabel('Eje X')
 plt.ylabel('Eje Y')
-plt.title('Comparación de Real Pose y Odometry sin factor de corrección')
+plt.title('Comparación Ruta Bidimensional Lab. 1 y Lab. 2 Control PI')
 plt.grid(True)
 plt.legend()
 plt.show()
-
-
-# Valores experimentales
-odom = odometry_info()
-true_1 = np.concatenate((odom[:200, 1], odom[800:1000, 1], odom[1600:1800, 1])) # Error camino 1
-true_2 = np.concatenate((odom[200:400, 0], odom[1000:1200, 0], odom[1800:2000, 0])) # Error camino 2
-true_3 = np.concatenate((odom[400:600, 1], odom[1200:1400, 1], odom[2000:2200, 1])) # Error camino 3
-true_4 = np.concatenate((odom[600:800, 0], odom[1400:1600, 0], odom[2200:2400, 0])) # Error camino 4
-
-# Valores esperados
-pred_0 = np.zeros((600,))
-pred_1 = np.ones((600,))
-
-def mse(true, predict):
-    error_cuadratico = np.square(true - predict)
-    mse = np.mean(error_cuadratico)
-    return mse
-
-mse_1 = mse(true_1, pred_0) # Verificar que Y esté en 0
-mse_2 = mse(true_2, pred_1) # Verificar que X esté en 1
-mse_3 = mse(true_3, pred_0) # Verificar que Y esté en 1
-mse_4 = mse(true_4, pred_0) # Verificar que X esté en 0
-
-mse_total = mse_1 + mse_2 + mse_3 + mse_4 # En distancia al cuadrado
-print(mse_total)
-

@@ -71,15 +71,7 @@ class PoseLoader(Node):
             pose.position.y = y
 
             # Transformación del angulo euler en quaternion
-            if 0 <= yaw_degree <= 180:
-             yaw_radian = radians(yaw_degree)
-
-            elif yaw_degree == 360:
-             yaw_radian = radians(yaw_degree - 180)
-            
-            else:
-             yaw_radian = -radians(yaw_degree - 180)
-
+            yaw_radian = radians(yaw_degree)
             quaternion = quaternion_from_euler(0, 0, yaw_radian)
 
             # Definicion de orientación en cada eje

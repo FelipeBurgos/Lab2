@@ -7,6 +7,7 @@ from std_msgs.msg import Float64, Bool
 from nav_msgs.msg import Odometry
 from transforms3d.euler import quat2euler as euler_from_quaternion
 from time import time
+from math import radians, degrees
 
 
 class KI_Angular(Node):
@@ -41,7 +42,7 @@ class KI_Angular(Node):
 
   def setpoint_cb(self, msg:Float64):
     self.reset()
-    self.setpoint = msg.data
+    self.setpoint = 0 if abs(msg.data) < 1e-8 else msg.data
     self.get_logger().info('Setpoint received: %f radians' % self.setpoint)
     self.activate = True
 
@@ -57,8 +58,18 @@ class KI_Angular(Node):
                                                 odom.pose.pose.orientation.w ) )
 
     # Lógica de control
-    error = self.setpoint - yaw
-    self.acumulate_error += error
+    if self.setpoint < 0 and 0 < yaw:
+      error = yaw - abs(self.setpoint)
+    
+    elif 0 < self.setpoint and abs(yaw) < 1e-3:
+      error = self.setpoint - abs(yaw)
+
+    elif -radians(180) <= yaw < 0:
+      error = abs(yaw) - abs(self.setpoint)
+
+    else:
+      error = self.setpoint - yaw
+    
     dt = 0 if (self.final_time - self.initial_time) < 1e-6 else self.final_time - self.initial_time
 
     self.get_logger().info( 'Current pose - ang: %f, error (%f)' % (yaw, error) )
@@ -71,6 +82,7 @@ class KI_Angular(Node):
 
     # Resultado actuacion
     actuation = p_actuation + i_actuation
+    self.acumulate_error += error
     
     # Definicion del mensaje de la velocidad angular
     speed = Twist()
@@ -105,7 +117,7 @@ class KI_Angular(Node):
 
 def main():
     rclpy.init()
-    ki_angular = KI_Angular(kp= 2, ki= 0)
+    ki_angular = KI_Angular(kp= 0.8, ki= 0.5)
     rclpy.spin(ki_angular)
 
 if __name__ == '__main__':

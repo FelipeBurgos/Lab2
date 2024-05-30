@@ -32,6 +32,11 @@ class DeadReckoningNav(Node):
     self.displacement_list = []
     self.current_index = 0
     self.waiting_for_completion = False
+
+    # Condiciones iniciales
+    self.x = None
+    self.y = None
+    self.theta = None
     
 
   def send_next_command(self):
@@ -83,7 +88,20 @@ class DeadReckoningNav(Node):
     theta = goal_pose[2]
 
     # Descomposición de desplazamientos
-    displacement_list = [(x, 0.0), (0.0, theta), (y, 0.0)]
+    displacement_list = []
+    if self.x != x:
+      displacement_list.append((x, 0.0))
+      self.x = x
+    
+    if self.theta != theta:
+      displacement_list.append((0.0, theta))
+      self.theta = theta
+
+    if self.y != y:
+      displacement_list.append((y, 0.0))
+      self.y = y
+    
+    #displacement_list = [(x, 0.0), (0.0, theta), (y, 0.0)]
     self.set_velocity(displacement_list)
     self.get_logger().info(f'Displacement list: {displacement_list}')
     self.get_logger().info('--------------------')
